@@ -1,0 +1,91 @@
+11:03:41	 From xavier : laende
+11:05:31	 From Jason Chen : Meeting Agenda:
+11:05:32	 From Jason Chen : https://docs.google.com/document/d/1iSXsmoSoARxueDwYPupvju5471nuNSP6srJcbWDcars/edit#
+11:06:22	 From xavier : https://docs.google.com/document/d/1beXeGeNmAJjmyFU7VDMea7XBtJUUDDvVJTyeRLVvex8/edit
+11:19:56	 From DChapman : Request permission to be recognized.
+11:20:40	 From DanG : I think its a great idea to host a large hackathon aligned with the first annual ANO summit
+11:24:37	 From Bobby : I see the hackathon being free entry anyway
+11:25:42	 From DanG : could people please mute their mic if there not speaking
+11:27:00	 From Matt Osborne : Hackathon Working Group
+11:29:11	 From [CL] Sam Vanderwaal : First ANO poll is live here: https://factomize.com/forums/threads/6-28-2018-monthly-ano-poll-1.468/
+11:29:19	 From [CL] Sam Vanderwaal : Approval of Committee Reports
+11:31:48	 From Spencer B : Developer Relations Committee
+11:33:50	 From Jason Chen : Poll #2
+11:33:50	 From Jason Chen : https://factomize.com/forums/threads/6-28-2018-monthly-ano-poll-2.469/
+11:38:21	 From Matt Osborne : What if we make Annual Summit a “Working Group” and disolve the working group when the summit is done?
+11:44:59	 From Jason Chen : Poll #3
+11:44:59	 From Jason Chen : https://factomize.com/forums/threads/6-28-2018-monthly-ano-poll-3.470/
+11:46:35	 From Supersloth : I also agree with David
+11:47:00	 From DChapman : Agree that marketing and exchange are doing well.
+11:47:32	 From DanG : true dat
+11:47:33	 From Normie : I agree with David as well
+11:49:56	 From DChapman : If you don't feel strong about it, let's not do it.
+11:54:26	 From DChapman : Who would head the committee?  
+11:54:34	 From DChapman : And can that be part of the motion?
+11:55:24	 From DChapman : Silverpro
+11:55:29	 From Jason Chen : Jay who?
+11:55:31	 From [CL] Sam Vanderwaal : siverpro and laende
+11:55:54	 From Jason Chen : silverpro, laende, was there a 3rd person?
+11:56:04	 From Matt Osborne : Jay Cheroske
+11:56:07	 From Jason Chen : thanks
+11:57:15	 From Jason Chen : Schalk right?
+11:57:18	 From RewardChain - Schalk : Yes
+11:57:19	 From Matt Osborne : Thanks for stepping up Blockrock and RewardChain!
+11:59:14	 From Jason Chen : Poll #4
+11:59:15	 From Jason Chen : https://factomize.com/forums/threads/6-28-2018-monthly-ano-poll-4.471/
+12:00:41	 From Jason Chen : FYI - please vote. We're still missing vote from these ANOs
+12:00:41	 From Jason Chen : Have Not Voted: Factoid Authority, Factom Inc., Factomatic, Syncroblock
+12:00:58	 From DanG : xavier your voice gets very faint at times
+12:03:54	 From Jason Chen : combine core and technical?
+12:03:58	 From Jason Chen : was there are third to combine? 
+12:06:20	 From Jay Smith : Whoever owns the invite for these meetings,  if the ANO community does not mind inviting me, will you please add me to the invite list for this meeting going forward?
+12:07:00	 From Jason Chen : poll #5
+12:07:00	 From Jason Chen : https://factomize.com/forums/threads/6-28-2018-monthly-ano-poll-5.472/
+12:07:43	 From Supersloth : Jay, I think the invite was just sent out via the operators announcements. Do you have an operators tag on Discord? If not, perhaps you could get that tag then you will see ANO meeting information
+12:08:20	 From Jay Smith : Ah, thanks
+12:08:31	 From Jason Chen : Poll #6
+12:08:31	 From Jason Chen : https://factomize.com/forums/threads/poll-thread-watched-6-28-2018-monthly-ano-poll-6.473/
+12:09:21	 From Niels : Ok was away from meeting for a second. The tesnet crew payment was tabled? If we do that we might risk upsetting or at least dissapointing them
+12:09:50	 From xavier : can untable it at the open floor
+12:09:57	 From xavier : no one spoke up at that time
+12:10:04	 From Supersloth : Yeah I think we should untable
+12:11:18	 From Niels : Story is to be found here: https://factomize.com/forums/threads/testnet-crew-pay.425/
+12:12:20	 From Bobby : If you’re happy to Xavier, that’d be great
+12:14:58	 From Jason Chen : Poll #7
+12:14:59	 From Jason Chen : https://factomize.com/forums/threads/6-28-2018-monthly-ano-poll-7.474/
+12:17:10	 From FlyingViking : I’m on listen only.. I’m based in Dubai and there’s no tax implications here but for the future if someone else takes over it is a concern
+12:19:06	 From DChapman : May I be recognized please.
+12:19:38	 From Matt Osborne : May I be recognized please
+12:21:27	 From DanG : agree with Matt and thanks for bringing that to light
+12:22:20	 From Jason Chen : Have Not Voted: Factoid Authority, Factomatic, Syncroblock
+12:23:27	 From Matt Osborne : I would like the floor
+12:24:16	 From [Factomatic] Nikola : I’m experiencing issues with my phone and can’t vote through the forum, so just wanted to put it on writing that Factomatic votes as follows for the respective polls: 1 yes, 2 no, 3 yes, 4 yes, 5 yes, 6 yes, 7 yes
+12:24:48	 From DChapman : Can anyone vouch for Nikola?  I can fix this but need them vouched for.
+12:25:52	 From Jason Chen : post #8
+12:25:52	 From Jason Chen : https://factomize.com/forums/threads/6-28-2018-monthly-ano-poll-8.475/
+12:26:54	 From Supersloth : Can you clarify what you mean by vouch? I have had exchanges with Nikola due to the grant I am sponsoring and I know she is a member of that team
+12:28:35	 From Supersloth : Sorry Nikola, I just referred to you as she, but I have spoken with Nikola over email a lot
+12:28:38	 From Matt Osborne : https://www.youtube.com/watch?v=SE8KlskLKzc
+12:28:49	 From Matt Osborne : I have new business
+12:30:34	 From brm - laende : Will there be created a forum for the doc. comittee at factomize? 
+12:30:48	 From DChapman : Yes, I'll create one for all new committees
+12:31:25	 From Niels : Can i have the floor please
+12:31:26	 From brm - laende : Great
+12:32:22	 From Jason Chen : ANO Contribution working group
+12:33:16	 From DanG : Can I have the floor when your done
+12:34:48	 From Jason Chen : Poll #9
+12:34:48	 From Jason Chen : https://factomize.com/forums/threads/6-28-2018-monthly-ano-poll-9.476/
+12:35:02	 From Bobby : I generally think we need some moderation on Discord to avoid putting off newcomers
+12:35:23	 From [CL] Sam Vanderwaal : I agree.
+12:35:34	 From DanG : I think we can all do this as ANO
+12:35:36	 From [CL] Sam Vanderwaal : The negative sentiment is getting out of control.
+12:36:00	 From DanG : Is there any support in creating a new channel on discord for those that need to vent
+12:36:07	 From Matt Osborne : Thanks for running this Xavier!
+12:36:11	 From DanG : Thanks
+12:36:15	 From Supersloth : Thanks Xavier!
+12:36:18	 From HashnStore - Elie : Cheers Xavier
+12:36:22	 From Bobby : Thanks all
+12:36:30	 From Luap : Thanks everyone
+12:36:30	 From maxlambda : Thanks :)
+12:36:42	 From Spencer B : Thanks all
+12:36:56	 From Normie : Thanks

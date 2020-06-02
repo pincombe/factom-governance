@@ -1,0 +1,96 @@
+﻿13:48:54	 From  Tom : Hi
+13:49:13	 From  [LayerTech] Neo : hi
+13:53:04	 From  [HashnStore] - Elie - Zod : Hi folks - And welcome to new ANOs!
+13:53:18	 From  Colin Campbell : Hey
+13:53:51	 From  Nate [ScooterDobbins - PrestigeIT/Federated Reserve] : Hey everyone!
+13:54:16	 From  [Cube3] Tom : Thanks Elie
+13:54:47	 From  [Cube3] Tom : es
+13:54:52	 From  [Cube3] Tom : Yes we can
+13:59:10	 From  maxlambda : Hey :)
+13:59:17	 From  [LayerTech] Neo : September ANO Meeting Attendance open -https://docs.google.com/spreadsheets/d/1BcRI6fVWAwVr5IUOJBFuMejUfjnXcvcikYgOvJwKaXE/edit#gid=0
+13:59:18	 From  maxlambda : Can hear everyone well :)
+13:59:23	 From  [LayerTech] Neo : Please fill out to speed up roll call
+13:59:56	 From  (Fed This) Bobby : Elie?
+14:00:06	 From  [HashnStore] - Elie - Zod : Yeah ?
+14:00:19	 From  Supersloth : You keyboard is load, Zod
+14:00:23	 From  Supersloth : loud*
+14:00:33	 From  [HashnStore] - Elie - Zod : Removed the speaker
+14:01:29	 From  [LayerTech] Xavier : https://docs.google.com/spreadsheets/d/1BcRI6fVWAwVr5IUOJBFuMejUfjnXcvcikYgOvJwKaXE/edit#gid=0
+14:06:42	 From  [Cube3] Tom : Nolan Bauer is here but looks like he has no mic
+14:06:53	 From  [Cube3] Tom : From VBIF
+14:06:55	 From  [BuildingIM] Ben Jeater : Approval of previous minutes?
+14:06:56	 From  steven : Can you change your nickname during the call?
+14:07:02	 From  [LayerTech] Neo : Thanks. I'll record his attendance. 
+14:07:02	 From  GOI - Matt O : I;m traveling
+14:07:20	 From  GOI - Matt O : Thanks for talking David
+14:07:23	 From  [LayerTech] Neo : and Matt
+14:07:29	 From  [LayerTech] Neo : recorded on rollcall
+14:07:30	 From  [Cube3] Tom : steven hover over your name and click rename
+14:08:25	 From  [LayerTech] Xavier : https://docs.google.com/document/d/1Edtwr_J49fAoFFIgYjjeeHjm1wK41iHv8O-_aeiKx2Q/edit
+14:08:33	 From  steven : Hmm, not seing this. Does the linux client have that support?
+14:09:37	 From  [Cube3] Tom : steven not sure im on windows for this sorry
+14:10:10	 From  Valentin Ganev : I don't think there is support for this on the Linux client :(
+14:11:32	 From  Supersloth : I can’t see it on Mac either
+14:11:39	 From  [BuildingIM] Ben Jeater : I have it on mac
+14:16:31	 From  [LayerTech] Xavier : https://drive.google.com/open?id=1d0cOgkksVWzcMpAAn2w9aGQ32nhQ6vVrAzSovTaUE64
+14:21:31	 From  [LayerTech] Xavier : https://docs.google.com/document/d/1IJddChJjg1Oj9gYVkLAg9-QaEvUXAAfv7pFi4zo9ke0/edit?usp=sharing
+14:23:42	 From  [LayerTech] Xavier : https://drive.google.com/open?id=1k7n3crb-4szs65XvyKUAjGZ8AaUXCklAUF5_Ony-Utg
+14:24:47	 From  [LayerTech] Neo : Poll #1
+14:24:48	 From  [LayerTech] Neo : https://factomize.com/forums/threads/09-27-2018-monthly-ano-poll-1.854/
+14:28:57	 From  [LayerTech] Xavier : https://factomize.com/forums/threads/ano-retreat-october-26th.806/
+14:32:17	 From  [BuildingIM] Ben Jeater : https://factomcommittee.typeform.com/to/dD5JMb
+14:36:03	 From  GOI - Matt O : Can we get some ballpark pricing on exchange listings prices? Maybe compare price to volume/size of exchange?
+14:37:01	 From  GOI - Matt O : Also, is the exchange committee prioritizing non-US jurisdictions (such as South Korea)?
+14:37:09	 From  (Fed This) Bobby : Are they willing to take FCT, rather than $?
+14:44:00	 From  [HashnStore] - Elie - Zod : +1
+14:44:12	 From  [BuildingIM] Ben Jeater : +1
+14:44:15	 From  GOI - Matt O : +1
+14:47:40	 From  [Stamp-it] Mig : Where does this StableCoin land compared to all the development that are needed for the protocol right now... (Sharding, Voting, Wallets, Exchanges, Marketing, StableCoin, etc)
+14:48:37	 From  [Stamp-it] Mig : In term of importance or priority, in paul's view
+14:50:11	 From  [Factomize]DChapman : ANO meeting date poll: https://factomize.com/forums/threads/october-meeting-date.855/
+14:52:34	 From  GOI - Matt O : +1 Adam
+14:52:39	 From  [Factomize]DChapman : +1
+14:54:59	 From  [HashnStore] - Elie - Zod : Isn't there a 1 month shift issue on the poll ? Should be first/second of November
+14:59:41	 From  [Factomize]DChapman : I fixed the poll HashNStore.  It's now for November 1st.  People can change their votes if necessary.
+15:00:27	 From  [HashnStore] - Elie - Zod : ty
+15:03:20	 From  [LayerTech] Xavier : If anyone wants to chime, raise your hand on zoom or type here. So I can prioritize you better this way.
+15:04:14	 From  gregforst : Xavier I would like to comment
+15:04:20	 From  [Factomize]DChapman : So would I
+15:05:32	 From  maxlambda : Do we have an economist who can give us some kind of idea on what kind of impact it will have?
+15:07:28	 From  [LayerTech] Xavier : I will comment as LayerTech after.
+15:07:57	 From  [LayerTech] Xavier : If no further comments, we will wrap up this discussion and move it onto Factomize forum.
+15:08:10	 From  Samuel Vanderwaal : I have a quick comment to add before we move on to the next forum after you're done with yours, Xavier
+15:08:27	 From  Samuel Vanderwaal : *next topic
+15:08:31	 From  Valentin Ganev : I would like to comment
+15:08:51	 From  [Factomize]DChapman : Best tech doesn't always win.  We need strategy for uptake and to ensure it's not going to be detrimental.  If we have that, I support it.
+15:09:04	 From  [BuildingIM] Ben Jeater : I don’t think this is going to get sorted on this call; can we move the discussion to the forum?
+15:09:46	 From  [LayerTech] Xavier : I’ll let Sam and Valentin chime in then we should move the discussion to the forum.
+15:13:23	 From  [Canonical Ledgers] Adam Levy : I'll make one final comment here in chat because I have already spoken twice. 
+I hate to be the guy repeatedly harping on the same topic but this is a fundamental issue to scaling development of Factom. Accepting Pull Requests is necessary but not sufficient for allowing development of Factom to scale. It's akin to having the keys to a car that has no gas in it. Or having access to a mechanics shop and tools, without having the knowledge of a mechanic. If development is going to scale, developers need the resources to be able to learn the specifics about Factom codebase internals. Factom Inc need to share their knowledge. They need to build the resources for developers to know what needs to be worked on, and how to approach it. A place that the lessons that Factom Inc has learned can be captured and shared with other developers. Pull requests are the tip of the iceberg. 
+15:17:28	 From  GOI - Matt O : +1 ^
+15:17:39	 From  GOI - Matt O : Got to run, thanks everyone
+15:17:51	 From  steven : https://explorer.factoid.org/
+15:17:53	 From  Samuel Vanderwaal : Well done, TFA! This is excellent
+15:18:24	 From  [BuildingIM] Ben Jeater : Looks great :)
+15:18:29	 From  [Canonical Ledgers] Adam Levy : Looks terrific. 
+15:18:33	 From  [Matteroffact]Dan G : SWEET
+15:18:33	 From  HashnStore - Frederic : Looks very great
+15:18:34	 From  maxlambda : Great work :)
+15:19:21	 From  steven : Thanks, really looking forward to getting the heartbeat historical data shown. Will help show uptime of audits, as currently Audit servers have a bit of a pass
+15:19:40	 From  [HashnStore] - Elie - Zod : Kudos mates!
+15:19:55	 From  steven : :)
+15:20:16	 From  Normie : Excellent work!
+15:22:48	 From  Supersloth : Sorry guys I gotta run. Great meeting. Thanks!
+15:23:59	 From  [Bedrock] Jay Cheroske : Zoom has a “Raise Hand” feature that we might be able to leverage for this kind of thing.
+15:24:00	 From  [Factomatic] Niko Nikolov : +1 siverpro
+15:26:42	 From  [Cube3] Tom : +1
+15:27:06	 From  [Cube3] Tom : Budget time for each discussion and move to factomize if it runs over?
+15:27:23	 From  [Matteroffact]Dan G : I would be in favor of a 1hr cap
+15:27:43	 From  [FederatedReserve&PrestigeIT] Mark : 1 hour cap seems reasonable
+15:28:46	 From  [Factomize]DChapman : Xavier runs a good meeting.  I think we can find areas to improve efficiency so we can pack more into the hour.
+15:29:30	 From  Samuel Vanderwaal : I think most of our meetings have run under an hour but an hour and a half would ensure we can get through everything if we're efficient. My two satoshis.
+15:30:23	 From  [Stamp-it] Mig : This is one of the most engaging meeting we had and it was still under 1h30
+15:30:31	 From  JulianFT : One possibility would be having 1 hr that we fit all of the topics that ANOs need to be here for, then after that have indefinite open floor for anybody who wants to keep talking about issues over voice chat
+15:30:32	 From  [Factomize]DChapman : For example, we can do the roll call on Factomize.  That often takes about 5 minutes.  
+15:30:56	 From  Factom, Inc : from Brian Deery: also, I should note I am still not convinced that the stablecoin is a good ida
+15:31:01	 From  (Fed This) Bobby : Thanks everyone

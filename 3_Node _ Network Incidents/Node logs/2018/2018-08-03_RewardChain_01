@@ -1,0 +1,2199 @@
+Using NetworkName "MAIN"
+SIGTRAP: trace trap
+PC=0x459761 m=22 sigcode=128
+
+goroutine 172 [running]:
+runtime.breakpoint()
+	/usr/local/go/src/runtime/asm_amd64.s:273 +0x1 fp=0xc4259fb910 sp=0xc4259fb908 pc=0x459761
+runtime.Breakpoint()
+	/usr/local/go/src/runtime/proc.go:3463 +0x20 fp=0xc4259fb920 sp=0xc4259fb910 pc=0x436e80
+github.com/FactomProject/factomd/common/primitives.(*Hash).Fixed(0x0, 0x0, 0x0, 0x0, 0x0)
+	/go/src/github.com/FactomProject/factomd/common/primitives/hash.go:90 +0x5b fp=0xc4259fb940 sp=0xc4259fb920 pc=0x59fe2b
+github.com/FactomProject/factomd/state.(*State).executeMsg(0xc42046e000, 0x0, 0xec2ae0, 0xc420484800, 0x7)
+	/go/src/github.com/FactomProject/factomd/state/stateConsensus.go:113 +0x34c fp=0xc4259fbaf0 sp=0xc4259fb940 pc=0x9d4e7c
+github.com/FactomProject/factomd/state.(*State).Process(0xc42046e000, 0xc4259fbec8)
+	/go/src/github.com/FactomProject/factomd/state/stateConsensus.go:286 +0x82a fp=0xc4259fbc68 sp=0xc4259fbaf0 pc=0x9d62ba
+github.com/FactomProject/factomd/state.(*State).ValidatorLoop(0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/validation.go:77 +0x6f fp=0xc4259fbfd8 sp=0xc4259fbc68 pc=0x9ecccf
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2361 +0x1 fp=0xc4259fbfe0 sp=0xc4259fbfd8 pc=0x45c3e1
+created by github.com/FactomProject/factomd/engine.startServers
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:584 +0xbe
+
+goroutine 1 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+main.main()
+	/go/src/github.com/FactomProject/factomd/factomd.go:30 +0x117
+
+goroutine 66 [syscall, 936 minutes]:
+os/signal.signal_recv(0x0)
+	/usr/local/go/src/runtime/sigqueue.go:139 +0xa6
+os/signal.loop()
+	/usr/local/go/src/os/signal/signal_unix.go:22 +0x22
+created by os/signal.init.0
+	/usr/local/go/src/os/signal/signal_unix.go:28 +0x41
+
+goroutine 51 [chan receive, 935 minutes]:
+github.com/FactomProject/factomd/engine.GetLine(0xb97401, 0xc43824bed8, 0x0)
+	/go/src/github.com/FactomProject/factomd/engine/simControl.go:79 +0x4a
+github.com/FactomProject/factomd/engine.SimControl(0x0, 0xe32301)
+	/go/src/github.com/FactomProject/factomd/engine/simControl.go:110 +0x1b4
+github.com/FactomProject/factomd/engine.NetStart(0xc42046e000, 0x13029a0, 0x1)
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:544 +0x2dc2
+created by github.com/FactomProject/factomd/engine.Factomd
+	/go/src/github.com/FactomProject/factomd/engine/factomd.go:60 +0x34f
+
+goroutine 53 [select, 936 minutes, locked to thread]:
+runtime.gopark(0xe33b18, 0x0, 0xcdef34, 0x6, 0x18, 0x1)
+	/usr/local/go/src/runtime/proc.go:291 +0x11a
+runtime.selectgo(0xc4201bd750, 0xc4200a46c0)
+	/usr/local/go/src/runtime/select.go:392 +0xe50
+runtime.ensureSigM.func1()
+	/usr/local/go/src/runtime/signal_unix.go:549 +0x1f4
+runtime.goexit()
+	/usr/local/go/src/runtime/asm_amd64.s:2361 +0x1
+
+goroutine 68 [select, 936 minutes]:
+github.com/FactomProject/factomd/engine.mainInterruptHandler()
+	/go/src/github.com/FactomProject/factomd/engine/Signal.go:39 +0x10a
+created by github.com/FactomProject/factomd/engine.AddInterruptHandler
+	/go/src/github.com/FactomProject/factomd/engine/Signal.go:76 +0xee
+
+goroutine 69 [IO wait, 936 minutes]:
+internal/poll.runtime_pollWait(0x7fd6664efe78, 0x72, 0x0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420256398, 0x72, 0xc420213100, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420256398, 0xffffffffffffff00, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Accept(0xc420256380, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:372 +0x1a8
+net.(*netFD).accept(0xc420256380, 0x7fd6665be000, 0x0, 0xe33c48)
+	/usr/local/go/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc42048c000, 0xc4204fddd8, 0x4129d8, 0x30)
+	/usr/local/go/src/net/tcpsock_posix.go:136 +0x2e
+net.(*TCPListener).AcceptTCP(0xc42048c000, 0xc56ca0, 0xc420477470, 0xbd4820)
+	/usr/local/go/src/net/tcpsock.go:246 +0x49
+net/http.tcpKeepAliveListener.Accept(0xc42048c000, 0xc420038390, 0xbd4820, 0x12ee290, 0xcb57a0)
+	/usr/local/go/src/net/http/server.go:3216 +0x2f
+net/http.(*Server).Serve(0xc420140000, 0xeb4d40, 0xc42048c000, 0x0, 0x0)
+	/usr/local/go/src/net/http/server.go:2770 +0x1a5
+net/http.(*Server).ListenAndServe(0xc420140000, 0xc420140000, 0xc4204f4000)
+	/usr/local/go/src/net/http/server.go:2711 +0xa9
+net/http.ListenAndServe(0xc4201d4110, 0xe, 0x0, 0x0, 0x2, 0xc4201d4110)
+	/usr/local/go/src/net/http/server.go:2969 +0x7a
+github.com/FactomProject/factomd/engine.StartProfiler(0x80000, 0x0)
+	/go/src/github.com/FactomProject/factomd/engine/profiler.go:27 +0x111
+created by github.com/FactomProject/factomd/engine.NetStart
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:231 +0xbed
+
+goroutine 16 [select]:
+github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb.(*DB).mpoolDrain(0xc42045af00)
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/db_state.go:101 +0x127
+created by github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb.openDB
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/db.go:140 +0x4bf
+
+goroutine 15 [select, 9 minutes]:
+github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb.(*DB).compactionError(0xc42045af00)
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/db_compaction.go:90 +0xff
+created by github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb.openDB
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/db.go:139 +0x49d
+
+goroutine 29 [select]:
+github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/util.(*BufferPool).drain(0xc42014c000)
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/util/buffer_pool.go:206 +0x152
+created by github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/util.NewBufferPool
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/util/buffer_pool.go:237 +0x171
+
+goroutine 82 [select, 9 minutes]:
+github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb.(*DB).tCompaction(0xc42045af00)
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/db_compaction.go:804 +0x277
+created by github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb.openDB
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/db.go:146 +0x627
+
+goroutine 83 [select, 17 minutes]:
+github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb.(*DB).mCompaction(0xc42045af00)
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/db_compaction.go:751 +0x15d
+created by github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb.openDB
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/goleveldb/leveldb/db.go:147 +0x649
+
+goroutine 54 [sleep]:
+time.Sleep(0x12a05f200)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/state.(*CrossReplayFilter).Run(0xc421eb9270)
+	/go/src/github.com/FactomProject/factomd/state/crossBootReplay.go:136 +0x44
+created by github.com/FactomProject/factomd/state.(*State).SetupCrossBootReplay
+	/go/src/github.com/FactomProject/factomd/state/crossBootReplay.go:37 +0x113
+
+goroutine 102 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc457edd400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 72 [sleep]:
+time.Sleep(0x2faf080)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/engine.Peers(0xc4353ae600)
+	/go/src/github.com/FactomProject/factomd/engine/NetworkProcessorNet.go:310 +0x1cff
+created by github.com/FactomProject/factomd/engine.NetworkProcessorNet
+	/go/src/github.com/FactomProject/factomd/engine/NetworkProcessorNet.go:23 +0x3f
+
+goroutine 73 [chan receive]:
+github.com/FactomProject/factomd/state.NetOutMsgQueue.BlockingDequeue(0xc4201e03c0, 0x40d7b2c000000000, 0x1301f60)
+	/go/src/github.com/FactomProject/factomd/state/netOutMsgQueue.go:45 +0x3d
+github.com/FactomProject/factomd/engine.NetworkOutputs(0xc4353ae600)
+	/go/src/github.com/FactomProject/factomd/engine/NetworkProcessorNet.go:321 +0x57
+created by github.com/FactomProject/factomd/engine.NetworkProcessorNet
+	/go/src/github.com/FactomProject/factomd/engine/NetworkProcessorNet.go:24 +0x61
+
+goroutine 163 [IO wait, 935 minutes]:
+internal/poll.runtime_pollWait(0x7fd6664eff48, 0x72, 0x0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4215a6f18, 0x72, 0xc4230ba000, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4215a6f18, 0xffffffffffffff00, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Accept(0xc4215a6f00, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:372 +0x1a8
+net.(*netFD).accept(0xc4215a6f00, 0xc4231bb860, 0xc420068f10, 0x1)
+	/usr/local/go/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc4229c1810, 0x21, 0xc420d78330, 0x21)
+	/usr/local/go/src/net/tcpsock_posix.go:136 +0x2e
+net.(*TCPListener).Accept(0xc4229c1810, 0xcf7ced, 0x21, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock.go:259 +0x49
+github.com/FactomProject/factomd/p2p.(*Controller).acceptLoop(0xc43e3f82c0, 0xeb4000, 0xc4229c1810)
+	/go/src/github.com/FactomProject/factomd/p2p/controller.go:321 +0x9d
+created by github.com/FactomProject/factomd/p2p.(*Controller).listen
+	/go/src/github.com/FactomProject/factomd/p2p/controller.go:312 +0x385
+
+goroutine 164 [sleep]:
+time.Sleep(0x1312d00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Controller).runloop(0xc43e3f82c0)
+	/go/src/github.com/FactomProject/factomd/p2p/controller.go:418 +0xf5
+created by github.com/FactomProject/factomd/p2p.(*Controller).StartNetwork
+	/go/src/github.com/FactomProject/factomd/p2p/controller.go:208 +0xe9
+
+goroutine 165 [chan receive]:
+github.com/FactomProject/factomd/engine.(*P2PProxy).ManageOutChannel(0xc427562000)
+	/go/src/github.com/FactomProject/factomd/engine/p2pProxy.go:211 +0x1f6
+created by github.com/FactomProject/factomd/engine.(*P2PProxy).StartProxy
+	/go/src/github.com/FactomProject/factomd/engine/p2pProxy.go:201 +0x91
+
+goroutine 166 [chan receive]:
+github.com/FactomProject/factomd/engine.(*P2PProxy).ManageInChannel(0xc427562000)
+	/go/src/github.com/FactomProject/factomd/engine/p2pProxy.go:234 +0x65
+created by github.com/FactomProject/factomd/engine.(*P2PProxy).StartProxy
+	/go/src/github.com/FactomProject/factomd/engine/p2pProxy.go:202 +0xb3
+
+goroutine 167 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/engine.networkHousekeeping()
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:601 +0x30
+created by github.com/FactomProject/factomd/engine.NetStart
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:393 +0x4166
+
+goroutine 75 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/controlPanel.DisplayStateDrain(0xc4201e02a0)
+	/go/src/github.com/FactomProject/factomd/controlPanel/controlPanel.go:87 +0x171
+created by github.com/FactomProject/factomd/controlPanel.ServeControlPanel
+	/go/src/github.com/FactomProject/factomd/controlPanel/controlPanel.go:127 +0x155
+
+goroutine 170 [sleep]:
+time.Sleep(0x12a05f200)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/state.(*State).GoSyncEntries(0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/entrySyncing.go:307 +0x8c0
+created by github.com/FactomProject/factomd/engine.startServers
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:582 +0x66
+
+goroutine 171 [sleep]:
+time.Sleep(0xdf844b614)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/engine.Timer(0xec8b80, 0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/engine/timer.go:56 +0x2ed
+created by github.com/FactomProject/factomd/engine.startServers
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:583 +0x98
+
+goroutine 173 [chan receive]:
+github.com/FactomProject/factomd/state.ElectionQueue.BlockingDequeue(0xc4206be060, 0xec8b80, 0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/specialQueues.go:88 +0x3d
+github.com/FactomProject/factomd/elections.Run(0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/elections/elections.go:446 +0x1cc
+created by github.com/FactomProject/factomd/engine.startServers
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:585 +0xe4
+
+goroutine 74 [chan receive, 897 minutes]:
+github.com/FactomProject/factomd/engine.InvalidOutputs(0xc4353ae600)
+	/go/src/github.com/FactomProject/factomd/engine/NetworkProcessorNet.go:407 +0x55
+created by github.com/FactomProject/factomd/engine.NetworkProcessorNet
+	/go/src/github.com/FactomProject/factomd/engine/NetworkProcessorNet.go:25 +0x83
+
+goroutine 208 [IO wait, 802 minutes]:
+internal/poll.runtime_pollWait(0x7fd6664efc08, 0x72, 0x0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4414d0018, 0x72, 0xc4211d4100, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4414d0018, 0xffffffffffffff00, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Accept(0xc4414d0000, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:372 +0x1a8
+net.(*netFD).accept(0xc4414d0000, 0x401d27, 0xc4202192a0, 0xbce5e0)
+	/usr/local/go/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc42048c010, 0x458b00, 0xc4259f1e18, 0xc4259f1e20)
+	/usr/local/go/src/net/tcpsock_posix.go:136 +0x2e
+net.(*TCPListener).Accept(0xc42048c010, 0xe33460, 0xc420219220, 0xeb5200, 0xc445b30420)
+	/usr/local/go/src/net/tcpsock.go:259 +0x49
+net/http.(*Server).Serve(0xc4414d8000, 0xeb4000, 0xc42048c010, 0x0, 0x0)
+	/usr/local/go/src/net/http/server.go:2770 +0x1a5
+net/http.Serve(0xeb4000, 0xc42048c010, 0xeadc60, 0xc445b30030, 0xeb4000, 0xc42048c010)
+	/usr/local/go/src/net/http/server.go:2389 +0x73
+github.com/FactomProject/factomd/vendor/github.com/FactomProject/web.(*Server).Run(0xc42d15ee80, 0xc43824be70, 0x5)
+	/go/src/github.com/FactomProject/factomd/vendor/github.com/FactomProject/web/server.go:155 +0x25d
+created by github.com/FactomProject/factomd/wsapi.Start
+	/go/src/github.com/FactomProject/factomd/wsapi/wsapi.go:116 +0xbe8
+
+goroutine 55 [sleep]:
+time.Sleep(0x4a817c800)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/state.(*State).MakeMissingEntryRequests(0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/entrySyncing.go:164 +0xced
+created by github.com/FactomProject/factomd/state.(*State).GoSyncEntries
+	/go/src/github.com/FactomProject/factomd/state/entrySyncing.go:171 +0x6a
+
+goroutine 213 [IO wait, 935 minutes]:
+internal/poll.runtime_pollWait(0x7fd6664efcd8, 0x72, 0x0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc4414cc018, 0x72, 0xc4225e6000, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc4414cc018, 0xffffffffffffff00, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Accept(0xc4414cc000, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:372 +0x1a8
+net.(*netFD).accept(0xc4414cc000, 0x7fd6665bfb20, 0x0, 0xe33c48)
+	/usr/local/go/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc420974000, 0xc425b65e40, 0x4129d8, 0x30)
+	/usr/local/go/src/net/tcpsock_posix.go:136 +0x2e
+net.(*TCPListener).AcceptTCP(0xc420974000, 0xc56ca0, 0xc445bbc270, 0xbd4820)
+	/usr/local/go/src/net/tcpsock.go:246 +0x49
+net/http.tcpKeepAliveListener.Accept(0xc420974000, 0xc420038390, 0xbd4820, 0x12ee290, 0xcb57a0)
+	/usr/local/go/src/net/http/server.go:3216 +0x2f
+net/http.(*Server).Serve(0xc4414ac000, 0xeb4d40, 0xc420974000, 0x0, 0x0)
+	/usr/local/go/src/net/http/server.go:2770 +0x1a5
+net/http.(*Server).ListenAndServe(0xc4414ac000, 0xc4414ac000, 0xc4206b77b8)
+	/usr/local/go/src/net/http/server.go:2711 +0xa9
+net/http.ListenAndServe(0xc43824bea0, 0x5, 0x0, 0x0, 0x5, 0x0)
+	/usr/local/go/src/net/http/server.go:2969 +0x7a
+created by github.com/FactomProject/factomd/engine.launchPrometheus
+	/go/src/github.com/FactomProject/factomd/engine/profiler.go:33 +0xfb
+
+goroutine 296 [IO wait, 827 minutes]:
+internal/poll.runtime_pollWait(0x7fd6664efb38, 0x72, 0x0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420848718, 0x72, 0xc422bd4000, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420848718, 0xffffffffffffff00, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Accept(0xc420848700, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:372 +0x1a8
+net.(*netFD).accept(0xc420848700, 0xc43eef4760, 0xc4259f6bf0, 0x402dc8)
+	/usr/local/go/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc422cc20a8, 0xc4259f6c20, 0x401d27, 0xc43eef4760)
+	/usr/local/go/src/net/tcpsock_posix.go:136 +0x2e
+net.(*TCPListener).AcceptTCP(0xc422cc20a8, 0xc4259f6c68, 0xc4259f6c70, 0x18)
+	/usr/local/go/src/net/tcpsock.go:246 +0x49
+net/http.tcpKeepAliveListener.Accept(0xc422cc20a8, 0xe33460, 0xc43eef46e0, 0xeb5200, 0xc445c60450)
+	/usr/local/go/src/net/http/server.go:3216 +0x2f
+net/http.(*Server).Serve(0xc4416124e0, 0xeb4d40, 0xc422cc20a8, 0x0, 0x0)
+	/usr/local/go/src/net/http/server.go:2770 +0x1a5
+net/http.(*Server).ListenAndServe(0xc4416124e0, 0xc4416124e0, 0x0)
+	/usr/local/go/src/net/http/server.go:2711 +0xa9
+net/http.ListenAndServe(0xc43817e4a0, 0x5, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/http/server.go:2969 +0x7a
+github.com/FactomProject/factomd/controlPanel.ServeControlPanel(0xc4201e02a0, 0xc42046e000, 0xc421c90cc0, 0xc43e3f82c0, 0xeb28e0, 0x28)
+	/go/src/github.com/FactomProject/factomd/controlPanel/controlPanel.go:170 +0x6d9
+created by github.com/FactomProject/factomd/engine.NetStart
+	/go/src/github.com/FactomProject/factomd/engine/NetStart.go:542 +0x2da1
+
+goroutine 298 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc457edd200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 79 [chan receive]:
+github.com/FactomProject/factomd/controlPanel.doEvery(0x2540be400, 0xe32368)
+	/go/src/github.com/FactomProject/factomd/controlPanel/controlPanel.go:803 +0x9c
+created by github.com/FactomProject/factomd/controlPanel.ServeControlPanel
+	/go/src/github.com/FactomProject/factomd/controlPanel/controlPanel.go:144 +0x32d
+
+goroutine 80 [sleep]:
+time.Sleep(0x17d78400)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/controlPanel.manageConnections(0xc421c90cc0)
+	/go/src/github.com/FactomProject/factomd/controlPanel/connectionManagement.go:293 +0xfd
+created by github.com/FactomProject/factomd/controlPanel.ServeControlPanel
+	/go/src/github.com/FactomProject/factomd/controlPanel/controlPanel.go:145 +0x352
+
+goroutine 115 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc45ac9a000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 131 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc45ac9a000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 132 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef998, 0x72, 0xc425b5ebd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422f4a098, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc422f4a098, 0xc450628000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc422f4a080, 0xc450628000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc422f4a080, 0xc450628000, 0x1000, 0x1000, 0xc4396754b0, 0xc453d59220, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc420f68000, 0xc450628000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc4276b6120, 0xc4380aa000, 0x1, 0x9, 0xc425b5edb0, 0x10, 0xc441271200)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc4276b6120, 0xc4380aa000, 0x1, 0x9, 0x1, 0xc425b5ee28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc4276b6120, 0xc4380aa000, 0x1, 0x9, 0xc425b5eed0, 0x66a5ce, 0xc450626070)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc4276b6120, 0xc4380aa000, 0x9, 0x9, 0xc425b5ef30, 0x412189, 0xc425b5eed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc450626000, 0xc425b5eee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc450626000, 0xe33c00, 0xc450626000)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc450626000, 0xc0bbe0, 0xc4213bee10, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc450626000, 0xc0bbe0, 0xc4213bee10, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc45ac9a000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 116 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc45ac9a200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 133 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc45ac9a200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 134 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664efa68, 0x72, 0xc449e87bd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422b02098, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc422b02098, 0xc4209df000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc422b02080, 0xc4209df000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc422b02080, 0xc4209df000, 0x1000, 0x1000, 0xc4406b0f10, 0xc43f31c040, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc4507b34f8, 0xc4209df000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc42e716ba0, 0xc4201f3f80, 0x1, 0x9, 0xc449e87db0, 0x10, 0xc441271500)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc42e716ba0, 0xc4201f3f80, 0x1, 0x9, 0x1, 0xc449e87e28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc42e716ba0, 0xc4201f3f80, 0x1, 0x9, 0xc449e87ed0, 0x66a5ce, 0xc44184c570)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc42e716ba0, 0xc4201f3f80, 0x9, 0x9, 0xc449e87f30, 0x412189, 0xc449e87ed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc44184c500, 0xc449e87ee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc44184c500, 0xe33c00, 0xc44184c500)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc44184c500, 0xc0bbe0, 0xc4406b1050, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc44184c500, 0xc0bbe0, 0xc4406b1050, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc45ac9a200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 117 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc45ac9a400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 81 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc45ac9a400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 306 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef8c8, 0x72, 0xc440f85bd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422b02218, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc422b02218, 0xc422e88000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc422b02200, 0xc422e88000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc422b02200, 0xc422e88000, 0x1000, 0x1000, 0xc44147ed60, 0xc4381ded60, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc422bce000, 0xc422e88000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc42eb2b080, 0xc437326080, 0x1, 0x9, 0xc440f85db0, 0x10, 0xc457662a80)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc42eb2b080, 0xc437326080, 0x1, 0x9, 0x1, 0xc440f85e28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc42eb2b080, 0xc437326080, 0x1, 0x9, 0xc440f85ed0, 0x66a5ce, 0xc422f4a4f0)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc42eb2b080, 0xc437326080, 0x9, 0x9, 0xc440f85f30, 0x412189, 0xc440f85ed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc422f4a480, 0xc440f85ee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc422f4a480, 0xe33c00, 0xc422f4a480)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc422f4a480, 0xc0bbe0, 0xc43bef54d0, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc422f4a480, 0xc0bbe0, 0xc43bef54d0, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc45ac9a400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 118 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc45ac9a600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 135 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc45ac9a600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 136 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef7f8, 0x72, 0xc425b5fbd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc437f0c098, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc437f0c098, 0xc4394cf000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc437f0c080, 0xc4394cf000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc437f0c080, 0xc4394cf000, 0x1000, 0x1000, 0xc4213bf810, 0xc453d59340, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc4209744f0, 0xc4394cf000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc42e9f8c00, 0xc437bc3210, 0x1, 0x9, 0xc425b5fdb0, 0x10, 0xc441271800)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc42e9f8c00, 0xc437bc3210, 0x1, 0x9, 0x1, 0xc425b5fe28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc42e9f8c00, 0xc437bc3210, 0x1, 0x9, 0xc425b5fed0, 0x66a5ce, 0xc420ca65f0)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc42e9f8c00, 0xc437bc3210, 0x9, 0x9, 0xc425b5ff30, 0x412189, 0xc425b5fed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc420ca6580, 0xc425b5fee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc420ca6580, 0xe33c00, 0xc420ca6580)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc420ca6580, 0xc0bbe0, 0xc4213bf950, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc420ca6580, 0xc0bbe0, 0xc4213bf950, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc45ac9a600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 119 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc457edd200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 120 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef658, 0x72, 0xc42006dbd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420ca6418, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420ca6418, 0xc4394ce000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420ca6400, 0xc4394ce000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420ca6400, 0xc4394ce000, 0x1000, 0x1000, 0xc4213bf270, 0xc453d59280, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc458d9c000, 0xc4394ce000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc42e9f8720, 0xc420156000, 0x1, 0x9, 0xc42006ddb0, 0x10, 0xc441277680)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc42e9f8720, 0xc420156000, 0x1, 0x9, 0x1, 0xc42006de28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc42e9f8720, 0xc420156000, 0x1, 0x9, 0xc42006ded0, 0x66a5ce, 0xc45d87a070)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc42e9f8720, 0xc420156000, 0x9, 0x9, 0xc42006df30, 0x412189, 0xc42006ded0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc45d87a000, 0xc42006dee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc45d87a000, 0xe33c00, 0xc45d87a000)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc45d87a000, 0xc0bbe0, 0xc4213bf290, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc45d87a000, 0xc0bbe0, 0xc4213bf290, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc457edd200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 299 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc457edd400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 103 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef728, 0x72, 0xc44bd1abd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422f4a198, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc422f4a198, 0xc441463000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc422f4a180, 0xc441463000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc422f4a180, 0xc441463000, 0x1000, 0x1000, 0xc43bef54b0, 0xc4381dee20, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc420a46000, 0xc441463000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc42e8da240, 0xc420150017, 0x1, 0x9, 0xc44bd1adb0, 0x10, 0xc45cbaa000)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc42e8da240, 0xc420150017, 0x1, 0x9, 0x1, 0xc44bd1ae28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc42e8da240, 0xc420150017, 0x1, 0x9, 0xc44bd1aed0, 0x66a5ce, 0xc4575c6070)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc42e8da240, 0xc420150017, 0x9, 0x9, 0xc44bd1af30, 0x412189, 0xc44bd1aed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc4575c6000, 0xc44bd1aee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc4575c6000, 0xe33c00, 0xc4575c6000)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc4575c6000, 0xc0bbe0, 0xc424b52630, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc4575c6000, 0xc0bbe0, 0xc424b52630, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc457edd400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 300 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc457edd600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 137 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc457edd600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 301 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc457edd800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 138 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef588, 0x72, 0xc43de64bd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422f4a318, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc422f4a318, 0xc4411e2000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc422f4a300, 0xc4411e2000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc422f4a300, 0xc4411e2000, 0x1000, 0x1000, 0xc441f46b20, 0xc453d591e0, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42262e000, 0xc4411e2000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc4276b6240, 0xc42811a000, 0x1, 0x9, 0xc43de64db0, 0x10, 0xc441271e00)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc4276b6240, 0xc42811a000, 0x1, 0x9, 0x1, 0xc43de64e28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc4276b6240, 0xc42811a000, 0x1, 0x9, 0xc43de64ed0, 0x66a5ce, 0xc453a6c070)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc4276b6240, 0xc42811a000, 0x9, 0x9, 0xc43de64f30, 0x412189, 0xc43de64ed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc453a6c000, 0xc43de64ee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc453a6c000, 0xe33c00, 0xc453a6c000)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc453a6c000, 0xc0bbe0, 0xc4213beab0, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc453a6c000, 0xc0bbe0, 0xc4213beab0, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc457edd600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 139 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc457edd800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 140 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef4b8, 0x72, 0xc420c60bd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc45be7e098, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc45be7e098, 0xc450629000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc45be7e080, 0xc450629000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc45be7e080, 0xc450629000, 0x1000, 0x1000, 0xc4417282b0, 0xc453d592a0, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42262e010, 0xc450629000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc4276b6480, 0xc42811a040, 0x1, 0x9, 0xc420c60db0, 0x10, 0xc45bf9e180)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc4276b6480, 0xc42811a040, 0x1, 0x9, 0x1, 0xc420c60e28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc4276b6480, 0xc42811a040, 0x1, 0x9, 0xc420c60ed0, 0x66a5ce, 0xc453a6c170)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc4276b6480, 0xc42811a040, 0x9, 0x9, 0xc420c60f30, 0x412189, 0xc420c60ed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc453a6c100, 0xc420c60ee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc453a6c100, 0xe33c00, 0xc453a6c100)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc453a6c100, 0xc0bbe0, 0xc4213bf440, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc453a6c100, 0xc0bbe0, 0xc4213bf440, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc457edd800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 302 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc457edda00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 121 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc457edda00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 122 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef3e8, 0x72, 0xc420b85bd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422f4a418, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc422f4a418, 0xc43e901000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc422f4a400, 0xc43e901000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc422f4a400, 0xc43e901000, 0x1000, 0x1000, 0xc43bef56f0, 0xc43f31c000, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc42262e008, 0xc43e901000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc4276b6360, 0xc42811a020, 0x1, 0x9, 0xc420b85db0, 0x10, 0xc441277980)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc4276b6360, 0xc42811a020, 0x1, 0x9, 0x1, 0xc420b85e28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc4276b6360, 0xc42811a020, 0x1, 0x9, 0xc420b85ed0, 0x66a5ce, 0xc453a6c0f0)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc4276b6360, 0xc42811a020, 0x9, 0x9, 0xc420b85f30, 0x412189, 0xc420b85ed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc453a6c080, 0xc420b85ee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc453a6c080, 0xe33c00, 0xc453a6c080)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc453a6c080, 0xc0bbe0, 0xc4406b0e10, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc453a6c080, 0xc0bbe0, 0xc4406b0e10, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc457edda00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 303 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc457eddc00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 304 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc457eddc00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 305 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef318, 0x72, 0xc442b1ebd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420ca6518, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420ca6518, 0xc4209de000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420ca6500, 0xc4209de000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420ca6500, 0xc4209de000, 0x1000, 0x1000, 0xc4213bfa50, 0xc453d59380, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc420a46010, 0xc4209de000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc42e8da720, 0xc420150030, 0x1, 0x9, 0xc442b1edb0, 0x10, 0xc458fc2000)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc42e8da720, 0xc420150030, 0x1, 0x9, 0x1, 0xc442b1ee28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc42e8da720, 0xc420150030, 0x1, 0x9, 0xc442b1eed0, 0x66a5ce, 0xc4575c60f0)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc42e8da720, 0xc420150030, 0x9, 0x9, 0xc442b1ef30, 0x412189, 0xc442b1eed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc4575c6080, 0xc442b1eee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc4575c6080, 0xe33c00, 0xc4575c6080)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc4575c6080, 0xc0bbe0, 0xc4213bfa70, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc4575c6080, 0xc0bbe0, 0xc4213bfa70, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc457eddc00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223911 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809ac00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 355 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c4af0, 0x72, 0xc43de67bd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc420dc2018, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc420dc2018, 0xc43beec000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc420dc2000, 0xc43beec000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc420dc2000, 0xc43beec000, 0x1000, 0x1000, 0xc424b52340, 0xc453d59200, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc4392c6000, 0xc43beec000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc42293eba0, 0xc436c519b0, 0x1, 0x9, 0xc43de67db0, 0x10, 0xc45cbaa180)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc42293eba0, 0xc436c519b0, 0x1, 0x9, 0x1, 0xc43de67e28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc42293eba0, 0xc436c519b0, 0x1, 0x9, 0xc43de67ed0, 0x66a5ce, 0xc4234e2070)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc42293eba0, 0xc436c519b0, 0x9, 0x9, 0xc43de67f30, 0x412189, 0xc43de67ed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc4234e2000, 0xc43de67ee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc4234e2000, 0xe33c00, 0xc4234e2000)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc4234e2000, 0xc0bbe0, 0xc4213bed80, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc4234e2000, 0xc0bbe0, 0xc4213bed80, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc438b30200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223892 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c46e0, 0x77, 0xc45cbaa300)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422c1fc98, 0x77, 0xc43b069500, 0xc43b069548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc422c1fc98, 0xc43b069500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc422c1fc80, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc422c1fc80, 0xeb51c0, 0xc441a245a0, 0x0, 0x0, 0xeae180, 0xc42296c360, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc422c1fc80, 0xeb51c0, 0xc441a245a0, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5830, 0xc43b069768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc441a245a0, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc441a245a0, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5830, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc441a245a0, 0xcdca6e, 0x3, 0x0, 0xc421dc5830, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc441a245a0, 0xcdca6e, 0x3, 0x0, 0xc421dc5830, 0x3317a3c6a0ab, 0x1301f60, 0x2540bce43)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc441a245a0, 0xc422c1fc00, 0xeb1020, 0xc421dc5830, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc441a245a0, 0xc422c1fc00, 0xc45a419720, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc43b069ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc42296c340, 0x13, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc43b069ca8, 0xcdca6e, 0x3, 0xc42296c340, 0x13, 0x4, 0x2, 0xc42296c340, 0xc42296c34f)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc42296c340, 0x13, 0x2540be400, 0xc437bc3820, 0x4, 0xc42296c340, 0x13)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc436a8de00, 0x33154fbab8dd)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc436a8de00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc436a8de00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223918 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809b600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223888 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef178, 0x77, 0xc45cbaa480)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422c1f998, 0x77, 0xc420c66500, 0xc420c66548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc422c1f998, 0xc420c66500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc422c1f980, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc422c1f980, 0xeb51c0, 0xc441a24420, 0x0, 0x0, 0xeae180, 0xc42296c2a0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc422c1f980, 0xeb51c0, 0xc441a24420, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5710, 0xc420c66768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc441a24420, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc441a24420, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5710, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc441a24420, 0xcdca6e, 0x3, 0x0, 0xc421dc5710, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc441a24420, 0xcdca6e, 0x3, 0x0, 0xc421dc5710, 0x3317a3be7065, 0x1301f60, 0x2540b9f28)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc441a24420, 0xc422c1f900, 0xeb1020, 0xc421dc5710, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc441a24420, 0xc422c1f900, 0xc45a419660, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc420c66ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc42296c260, 0x13, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc420c66ca8, 0xcdca6e, 0x3, 0xc42296c260, 0x13, 0x4, 0x2, 0xc42296c260, 0xc42296c26f)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc42296c260, 0x13, 0x2540be400, 0xc437d69c70, 0x4, 0xc42296c260, 0x13)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc436a8d600, 0x33154fb28255)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc436a8d600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc436a8d600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223837 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809aa00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 321 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc438b30200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223893 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c4130, 0x77, 0xc42196d680)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422c1fd98, 0x77, 0xc449e85500, 0xc449e85548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc422c1fd98, 0xc449e85500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc422c1fd80, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc422c1fd80, 0xeb51c0, 0xc441a24600, 0x0, 0x0, 0xeae180, 0xc42296c3a0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc422c1fd80, 0xeb51c0, 0xc441a24600, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5890, 0xc449e85768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc441a24600, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc441a24600, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5890, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc441a24600, 0xcdca6e, 0x3, 0x0, 0xc421dc5890, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc441a24600, 0xcdca6e, 0x3, 0x0, 0xc421dc5890, 0x3317a3c9bde6, 0x1301f60, 0x2540bc986)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc441a24600, 0xc422c1fd00, 0xeb1020, 0xc421dc5890, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc441a24600, 0xc422c1fd00, 0xc45a419760, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc449e85ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc42296c380, 0x13, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc449e85ca8, 0xcdca6e, 0x3, 0xc42296c380, 0x13, 0x4, 0x2, 0xc42296c380, 0xc42296c38f)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc42296c380, 0x13, 0x2540be400, 0xc437bc2d5c, 0x4, 0xc42296c380, 0x13)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809a000, 0x33154fbdd63b)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809a000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809a000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 354 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc438b30200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223899 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd665f82d38, 0x77, 0xc4549af800)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc443eed698, 0x77, 0xc44bd1c500, 0xc44bd1c548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc443eed698, 0xc44bd1c500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc443eed680, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc443eed680, 0xeb51c0, 0xc4422e0cc0, 0x0, 0x0, 0xeae180, 0xc43eefb5e0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc443eed680, 0xeb51c0, 0xc4422e0cc0, 0xeb9e80, 0x0, 0xeb9e80, 0xc4536cb8f0, 0xc44bd1c768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc4422e0cc0, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc4422e0cc0, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc4536cb8f0, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc4422e0cc0, 0xcdca6e, 0x3, 0x0, 0xc4536cb8f0, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc4422e0cc0, 0xcdca6e, 0x3, 0x0, 0xc4536cb8f0, 0x3317a3d4cc61, 0x1301f60, 0x2540bc826)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc4422e0cc0, 0xc443eed600, 0xeb1020, 0xc4536cb8f0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc4422e0cc0, 0xc443eed600, 0xc4572044d0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc44bd1cca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc43eefb5c0, 0x12, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc44bd1cca8, 0xcdca6e, 0x3, 0xc43eefb5c0, 0x12, 0x4, 0x2, 0xc43eefb5c0, 0xc43eefb5ce)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc43eefb5c0, 0x12, 0x2540be400, 0xc437072640, 0x4, 0xc43eefb5c0, 0x12)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809ac00, 0x33154fc8e46c)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809ac00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809ac00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223897 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c43a0, 0x77, 0xc458fc2300)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc439fa4098, 0x77, 0xc4259ef500, 0xc4259ef548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc439fa4098, 0xc4259ef500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc439fa4080, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc439fa4080, 0xeb51c0, 0xc441a24840, 0x0, 0x0, 0xeae180, 0xc42296c440, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc439fa4080, 0xeb51c0, 0xc441a24840, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc59b0, 0xc4259ef768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc441a24840, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc441a24840, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc59b0, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc441a24840, 0xcdca6e, 0x3, 0x0, 0xc421dc59b0, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc441a24840, 0xcdca6e, 0x3, 0x0, 0xc421dc59b0, 0x3317a3d1976c, 0x1301f60, 0x2540bc033)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc441a24840, 0xc439fa4000, 0xeb1020, 0xc421dc59b0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc441a24840, 0xc439fa4000, 0xc45a419820, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc4259efca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc42296c420, 0x12, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc4259efca8, 0xcdca6e, 0x3, 0xc42296c420, 0x12, 0x4, 0x2, 0xc42296c420, 0xc42296c42e)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc42296c420, 0x12, 0x2540be400, 0xc43717a2a0, 0x4, 0xc42296c420, 0x12)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809a800, 0x33154fc5afb1)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809a800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809a800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223940 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc422cb5020, 0xc437f0cf80, 0xc43bf26fc0, 0xc43bf26f60)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223708 [sleep, 1 minutes]:
+time.Sleep(0x1bf08eb000)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/common/messages/electionMsgs.Fault(0xc44127a000, 0x2472e, 0x6, 0x3d0, 0xc44127a1a0, 0x464e01, 0x1bf08eb000)
+	/go/src/github.com/FactomProject/factomd/common/messages/electionMsgs/eomSigInternal.go:87 +0x78
+created by github.com/FactomProject/factomd/common/messages/electionMsgs.(*EomSigInternal).ElectionProcess
+	/go/src/github.com/FactomProject/factomd/common/messages/electionMsgs/eomSigInternal.go:168 +0x39f
+
+goroutine 223919 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809b600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223905 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c4bc0, 0x77, 0xc422d9e480)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc443eed998, 0x77, 0xc43de68500, 0xc43de68548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc443eed998, 0xc43de68500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc443eed980, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc443eed980, 0xeb51c0, 0xc4422e0ea0, 0x0, 0x0, 0xeae180, 0xc43eefb6a0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc443eed980, 0xeb51c0, 0xc4422e0ea0, 0xeb9e80, 0x0, 0xeb9e80, 0xc4536cba10, 0xc43de68768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc4422e0ea0, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc4422e0ea0, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc4536cba10, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc4422e0ea0, 0xcdca6e, 0x3, 0x0, 0xc4536cba10, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc4422e0ea0, 0xcdca6e, 0x3, 0x0, 0xc4536cba10, 0x3317a3e777a8, 0x1301f60, 0x2540bc6ab)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc4422e0ea0, 0xc443eed900, 0xeb1020, 0xc4536cba10, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc4422e0ea0, 0xc443eed900, 0xc4572045b0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc43de68ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc43eefb680, 0x12, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc43de68ca8, 0xcdca6e, 0x3, 0xc43eefb680, 0x12, 0x4, 0x2, 0xc43eefb680, 0xc43eefb68e)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc43eefb680, 0x12, 0x2540be400, 0xc43717be9c, 0x4, 0xc43eefb680, 0x12)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809b800, 0x33154fdb8f47)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809b800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809b800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223835 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809a000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223908 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc436a8de00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223910 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809ac00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223909 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc436a8de00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223852 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc436a8dc00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223744 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc436a8d800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223889 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef0a8, 0x77, 0xc4401ac180)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc443eed598, 0x77, 0xc449e86500, 0xc449e86548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc443eed598, 0xc449e86500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc443eed580, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc443eed580, 0xeb51c0, 0xc4422e0c60, 0x0, 0x0, 0xeae180, 0xc43eefb5a0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc443eed580, 0xeb51c0, 0xc4422e0c60, 0xeb9e80, 0x0, 0xeb9e80, 0xc4536cb890, 0xc449e86768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc4422e0c60, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc4422e0c60, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc4536cb890, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc4422e0c60, 0xcdca6e, 0x3, 0x0, 0xc4536cb890, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc4422e0c60, 0xcdca6e, 0x3, 0x0, 0xc4536cb890, 0x3317a3c0c4e0, 0x1301f60, 0x2540bb75f)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc4422e0c60, 0xc443eed500, 0xeb1020, 0xc4536cb890, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc4422e0c60, 0xc443eed500, 0xc457204480, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc449e86ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc43eefb580, 0x12, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc449e86ca8, 0xcdca6e, 0x3, 0xc43eefb580, 0x12, 0x4, 0x2, 0xc43eefb580, 0xc43eefb58e)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc43eefb580, 0x12, 0x2540be400, 0xc439bd2000, 0x4, 0xc43eefb580, 0x12)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc436a8d800, 0x33154fb4da6c)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc436a8d800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc436a8d800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223938 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809b800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223903 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c3ec0, 0x77, 0xc4401ad200)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc437f0d298, 0x77, 0x457b00, 0xc441184548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc437f0d298, 0xc441184500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc437f0d280, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc437f0d280, 0xeb51c0, 0xc422cb5140, 0x0, 0x0, 0xeae180, 0xc422cca4c0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc437f0d280, 0xeb51c0, 0xc422cb5140, 0xeb9e80, 0x0, 0xeb9e80, 0xc456e0b260, 0xc441184768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc422cb5140, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc422cb5140, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc456e0b260, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc422cb5140, 0xcdca6e, 0x3, 0x0, 0xc456e0b260, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc422cb5140, 0xcdca6e, 0x3, 0x0, 0xc456e0b260, 0x3317a3dd5d48, 0x1301f60, 0x2540bcdf2)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc422cb5140, 0xc437f0d200, 0xeb1020, 0xc456e0b260, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc422cb5140, 0xc437f0d200, 0xc439418c70, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc441184ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc422cca4a0, 0x11, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc441184ca8, 0xcdca6e, 0x3, 0xc422cca4a0, 0x11, 0x4, 0x2, 0xc422cca4a0, 0xc422cca4ad)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc422cca4a0, 0x11, 0x2540be400, 0xc439aec12c, 0x4, 0xc422cca4a0, 0x11)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809b400, 0x33154fd17511)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809b400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809b400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223900 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c42d0, 0x77, 0xc4401ad380)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc443eed798, 0x77, 0xc440f83500, 0xc440f83548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc443eed798, 0xc440f83500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc443eed780, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc443eed780, 0xeb51c0, 0xc4422e0d80, 0x0, 0x0, 0xeae180, 0xc43eefb620, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc443eed780, 0xeb51c0, 0xc4422e0d80, 0xeb9e80, 0x0, 0xeb9e80, 0xc4536cb950, 0xc440f83768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc4422e0d80, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc4422e0d80, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc4536cb950, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc4422e0d80, 0xcdca6e, 0x3, 0x0, 0xc4536cb950, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc4422e0d80, 0xcdca6e, 0x3, 0x0, 0xc4536cb950, 0x3317a3d6d630, 0x1301f60, 0x2540bc585)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc4422e0d80, 0xc443eed700, 0xeb1020, 0xc4536cb950, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc4422e0d80, 0xc443eed700, 0xc457204520, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc440f83ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc43eefb600, 0x12, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc440f83ca8, 0xcdca6e, 0x3, 0xc43eefb600, 0x12, 0x4, 0x2, 0xc43eefb600, 0xc43eefb60e)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc43eefb600, 0x12, 0x2540be400, 0xc42020e4c0, 0x4, 0xc43eefb600, 0x12)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809ae00, 0x33154fcaedcb)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809ae00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809ae00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223894 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c4610, 0x77, 0xc4401ad800)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422c1fe98, 0x77, 0xc449e80500, 0xc449e80548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc422c1fe98, 0xc449e80500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc422c1fe80, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc422c1fe80, 0xeb51c0, 0xc441a246c0, 0x0, 0x0, 0xeae180, 0xc42296c3c0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc422c1fe80, 0xeb51c0, 0xc441a246c0, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc58f0, 0xc449e80768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc441a246c0, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc441a246c0, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc58f0, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc441a246c0, 0xcdca6e, 0x3, 0x0, 0xc421dc58f0, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc441a246c0, 0xcdca6e, 0x3, 0x0, 0xc421dc58f0, 0x3317a3cc0b39, 0x1301f60, 0x2540bc8b0)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc441a246c0, 0xc422c1fe00, 0xeb1020, 0xc421dc58f0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc441a246c0, 0xc422c1fe00, 0xc45a4197a0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc449e80ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc437ec8380, 0x10, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc449e80ca8, 0xcdca6e, 0x3, 0xc437ec8380, 0x10, 0x4, 0x2, 0xc437ec8380, 0xc437ec838c)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc437ec8380, 0x10, 0x2540be400, 0xc437d6997c, 0x4, 0xc437ec8380, 0x10)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809a200, 0x33154fc023d5)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809a200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809a200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223896 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c4950, 0x77, 0xc4401ad980)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422c1ff98, 0x77, 0xc4259ed500, 0xc4259ed548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc422c1ff98, 0xc4259ed500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc422c1ff80, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc422c1ff80, 0xeb51c0, 0xc441a247e0, 0x0, 0x0, 0xeae180, 0xc42296c400, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc422c1ff80, 0xeb51c0, 0xc441a247e0, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5950, 0xc4259ed768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc441a247e0, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc441a247e0, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5950, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc441a247e0, 0xcdca6e, 0x3, 0x0, 0xc421dc5950, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc441a247e0, 0xcdca6e, 0x3, 0x0, 0xc421dc5950, 0x3317a3cf3414, 0x1301f60, 0x2540bb915)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc441a247e0, 0xc422c1ff00, 0xeb1020, 0xc421dc5950, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc441a247e0, 0xc422c1ff00, 0xc45a4197e0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc4259edca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc42296c3e0, 0x12, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc4259edca8, 0xcdca6e, 0x3, 0xc42296c3e0, 0x12, 0x4, 0x2, 0xc42296c3e0, 0xc42296c3ee)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc42296c3e0, 0x12, 0x2540be400, 0xc437c94010, 0x4, 0xc42296c3e0, 0x12)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809a600, 0x33154fc34c24)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809a600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809a600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223836 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809a000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 219638 [runnable]:
+time.Sleep(0x1312d00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs.func6(0xc439f14200, 0xec8b80, 0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:717 +0x7d
+created by github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs
+	/go/src/github.com/FactomProject/factomd/state/processList.go:710 +0x303
+
+goroutine 429 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc43fa27400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 222088 [runnable]:
+time.Sleep(0x1312d00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs.func6(0xc43959ee00, 0xec8b80, 0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:717 +0x7d
+created by github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs
+	/go/src/github.com/FactomProject/factomd/state/processList.go:710 +0x303
+
+goroutine 197612 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c3f90, 0x72, 0xc43b06d760)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc43f728498, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc43f728498, 0xc43f252000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc43f728480, 0xc43f252000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc43f728480, 0xc43f252000, 0x1000, 0x1000, 0x60, 0xc4521f6aa0, 0x2)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc441322480, 0xc43f252000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+crypto/tls.(*block).readFromUntil(0xc43f1621b0, 0x7fd66605e550, 0xc441322480, 0x5, 0xc441322480, 0xf)
+	/usr/local/go/src/crypto/tls/conn.go:493 +0x96
+crypto/tls.(*Conn).readRecord(0xc4201ff500, 0xe33c17, 0xc4201ff620, 0x4582c0)
+	/usr/local/go/src/crypto/tls/conn.go:595 +0xe0
+crypto/tls.(*Conn).Read(0xc4201ff500, 0xc438f22000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/crypto/tls/conn.go:1156 +0x100
+net/http.(*persistConn).Read(0xc44a5c0b40, 0xc438f22000, 0x1000, 0x1000, 0xc43b06db98, 0x405305, 0xc42aee7020)
+	/usr/local/go/src/net/http/transport.go:1453 +0x136
+bufio.(*Reader).fill(0xc44a948420)
+	/usr/local/go/src/bufio/bufio.go:100 +0x11e
+bufio.(*Reader).Peek(0xc44a948420, 0x1, 0x0, 0x0, 0x1, 0xc458c8b620, 0x0)
+	/usr/local/go/src/bufio/bufio.go:132 +0x3a
+net/http.(*persistConn).readLoop(0xc44a5c0b40)
+	/usr/local/go/src/net/http/transport.go:1601 +0x185
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1237 +0x95a
+
+goroutine 466 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c3df0, 0x77, 0xc43ec257b8)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc43f728d98, 0x77, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc43f728d98, 0xc43965a100, 0x3a, 0x1eb3)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).Write(0xc43f728d80, 0xc43965a006, 0x181, 0x1ffa, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:264 +0x237
+net.(*netFD).Write(0xc43f728d80, 0xc43965a006, 0x181, 0x1ffa, 0x40, 0x3, 0xc45d376be0)
+	/usr/local/go/src/net/fd_unix.go:220 +0x4f
+net.(*conn).Write(0xc459b984e0, 0xc43965a006, 0x181, 0x1ffa, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:188 +0x6a
+encoding/gob.(*Encoder).writeMessage(0xc43725ba40, 0xeadb80, 0xc459b984e0, 0xc43725ba78)
+	/usr/local/go/src/encoding/gob/encoder.go:81 +0x174
+encoding/gob.(*Encoder).EncodeValue(0xc43725ba40, 0xc13f00, 0xc44caeb320, 0x99, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/encoder.go:252 +0x44e
+encoding/gob.(*Encoder).Encode(0xc43725ba40, 0xc13f00, 0xc44caeb320, 0xc44caeb320, 0x0)
+	/usr/local/go/src/encoding/gob/encoder.go:175 +0x61
+github.com/FactomProject/factomd/p2p.(*Connection).sendParcel(0xc43fa27400, 0x70009feedbeef, 0xff, 0xce2ef1, 0xb, 0x10000205e010e, 0x5d67c4c402aa9f14, 0x0, 0x0, 0xc4201500f0, ...)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:468 +0x10c
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc43fa27400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:411 +0x3d1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 467 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c3df0, 0x72, 0xc440f82bd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc43f728d98, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc43f728d98, 0xc4229e0000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc43f728d80, 0xc4229e0000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc43f728d80, 0xc4229e0000, 0x1000, 0x1000, 0x0, 0xead280, 0xc4200700f0)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc459b984e0, 0xc4229e0000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc421d980c0, 0xc4208aa3b0, 0x1, 0x9, 0x0, 0xeadb40, 0xc4573a9180)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc421d980c0, 0xc4208aa3b0, 0x1, 0x9, 0x1, 0x0, 0xeadb40, 0xc4573a9180)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc421d980c0, 0xc4208aa3b0, 0x1, 0x9, 0x0, 0xeadb40, 0xc4573a9180)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc421d980c0, 0xc4208aa3b0, 0x9, 0x9, 0xc440f82f30, 0x412189, 0xc440f82ed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc45d87b100, 0xc440f82ee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc45d87b100, 0xe33c00, 0xc45d87b100)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc45d87b100, 0xc0bbe0, 0xc42134acf0, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc45d87b100, 0xc0bbe0, 0xc42134acf0, 0xeadb40, 0xc4573a9180)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc43fa27400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 431 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc43fa27800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 432 [runnable]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc43fa27a00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:228 +0x234
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 433 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc43fa27a00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 482 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd665f82c68, 0x72, 0xc43de66bd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc43f728698, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc43f728698, 0xc45ce18000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc43f728680, 0xc45ce18000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc43f728680, 0xc45ce18000, 0x1000, 0x1000, 0xc4396742b0, 0xc453d59100, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc441322308, 0xc45ce18000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc4216f6300, 0xc4412b0430, 0x1, 0x9, 0xc43de66db0, 0x10, 0xc43718ad80)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc4216f6300, 0xc4412b0430, 0x1, 0x9, 0x1, 0xc43de66e28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc4216f6300, 0xc4412b0430, 0x1, 0x9, 0xc43de66ed0, 0x66a5ce, 0xc43eabb3f0)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc4216f6300, 0xc4412b0430, 0x9, 0x9, 0xc43de66f30, 0x412189, 0xc43de66ed0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc43eabb380, 0xc43de66ee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc43eabb380, 0xe33c00, 0xc43eabb380)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc43eabb380, 0xc0bbe0, 0xc439674360, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc43eabb380, 0xc0bbe0, 0xc439674360, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc43fa27a00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 483 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc43fa27800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 484 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd665f82b98, 0x72, 0xc4259ecbd0)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc457090418, 0x72, 0xffffffffffffff00, 0xeaf000, 0x12af810)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitRead(0xc457090418, 0xc43beed000, 0x1000, 0x1000)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:90 +0x3d
+internal/poll.(*FD).Read(0xc457090400, 0xc43beed000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/internal/poll/fd_unix.go:157 +0x17d
+net.(*netFD).Read(0xc457090400, 0xc43beed000, 0x1000, 0x1000, 0xc4396747c0, 0xc420b3aca0, 0xce36fa)
+	/usr/local/go/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc4413222f0, 0xc43beed000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/net.go:176 +0x6a
+bufio.(*Reader).Read(0xc422b83560, 0xc4412b0380, 0x1, 0x9, 0xc4259ecdb0, 0x10, 0xc43718b080)
+	/usr/local/go/src/bufio/bufio.go:216 +0x238
+io.ReadAtLeast(0xeacf60, 0xc422b83560, 0xc4412b0380, 0x1, 0x9, 0x1, 0xc4259ece28, 0x42c264, 0xe318c8)
+	/usr/local/go/src/io/io.go:309 +0x86
+io.ReadFull(0xeacf60, 0xc422b83560, 0xc4412b0380, 0x1, 0x9, 0xc4259eced0, 0x66a5ce, 0xc43eabb0f0)
+	/usr/local/go/src/io/io.go:327 +0x58
+encoding/gob.decodeUintReader(0xeacf60, 0xc422b83560, 0xc4412b0380, 0x9, 0x9, 0xc4259ecf30, 0x412189, 0xc4259eced0, 0x42b969)
+	/usr/local/go/src/encoding/gob/decode.go:120 +0x63
+encoding/gob.(*Decoder).recvMessage(0xc43eabb080, 0xc4259ecee8)
+	/usr/local/go/src/encoding/gob/decoder.go:80 +0x57
+encoding/gob.(*Decoder).decodeTypeSequence(0xc43eabb080, 0xe33c00, 0xc43eabb080)
+	/usr/local/go/src/encoding/gob/decoder.go:142 +0x136
+encoding/gob.(*Decoder).DecodeValue(0xc43eabb080, 0xc0bbe0, 0xc451d37e60, 0x16, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:210 +0xdc
+encoding/gob.(*Decoder).Decode(0xc43eabb080, 0xc0bbe0, 0xc451d37e60, 0x0, 0x0)
+	/usr/local/go/src/encoding/gob/decoder.go:187 +0x14f
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc43fa27800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:498 +0xe0
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 217194 [sleep]:
+time.Sleep(0x1312d00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs.func6(0xc4394b5400, 0xec8b80, 0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:717 +0x7d
+created by github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs
+	/go/src/github.com/FactomProject/factomd/state/processList.go:710 +0x303
+
+goroutine 223855 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809a400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223891 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c4200, 0x77, 0xc43e8ed800)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422c1fb98, 0x77, 0xc420c63500, 0xc420c63548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc422c1fb98, 0xc420c63500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc422c1fb80, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc422c1fb80, 0xeb51c0, 0xc441a24540, 0x0, 0x0, 0xeae180, 0xc42296c320, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc422c1fb80, 0xeb51c0, 0xc441a24540, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc57d0, 0xc420c63768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc441a24540, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc441a24540, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc57d0, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc441a24540, 0xcdca6e, 0x3, 0x0, 0xc421dc57d0, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc441a24540, 0xcdca6e, 0x3, 0x0, 0xc421dc57d0, 0x3317a3c518c1, 0x1301f60, 0x2540bc469)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc441a24540, 0xc422c1fb00, 0xeb1020, 0xc421dc57d0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc441a24540, 0xc422c1fb00, 0xc45a4196e0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc420c63ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc42296c300, 0x13, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc420c63ca8, 0xcdca6e, 0x3, 0xc42296c300, 0x13, 0x4, 0x2, 0xc42296c300, 0xc42296c30f)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc42296c300, 0x13, 0x2540be400, 0xc43717ba7c, 0x4, 0xc42296c300, 0x13)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc436a8dc00, 0x33154fb92f4c)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc436a8dc00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc436a8dc00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223941 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc422cb5080, 0xc437f0d080, 0xc43bf270e0, 0xc43bf27080)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223970 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc4422e0cc0, 0xc443eed680, 0xc45ce4e5a0, 0xc45ce4e540)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223943 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc422cb5140, 0xc437f0d280, 0xc43bf27320, 0xc43bf272c0)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223939 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809b800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223944 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc422cb51a0, 0xc437f0d380, 0xc43bf27440, 0xc43bf273e0)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 221936 [select]:
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs(0xc459155300, 0xec8b80, 0xc42046e000, 0xc43e784d80, 0xc445c0d500, 0xc455a01260)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:741 +0x9c5
+created by github.com/FactomProject/factomd/state.NewProcessList
+	/go/src/github.com/FactomProject/factomd/state/processList.go:1429 +0xbd2
+
+goroutine 223745 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc436a8d800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223840 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809b200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223850 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc436a8d600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223854 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809a200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223853 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809a200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223921 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc441a244e0, 0xc422c1fa80, 0xc458c8b8c0, 0xc458c8b860)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223925 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc42300cd20, 0xc45d87b880, 0xc422b1e300, 0xc422b1e2a0)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223922 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809a600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223942 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc422cb50e0, 0xc437f0d180, 0xc43bf27200, 0xc43bf271a0)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223906 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc436a8da00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223955 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc441a245a0, 0xc422c1fc80, 0xc458c8bb00, 0xc458c8baa0)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223923 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809a800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223890 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6664ef248, 0x77, 0xc457663080)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc422c1fa98, 0x77, 0xc420c65500, 0xc420c65548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc422c1fa98, 0xc420c65500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc422c1fa80, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc422c1fa80, 0xeb51c0, 0xc441a244e0, 0x0, 0x0, 0xeae180, 0xc42296c2e0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc422c1fa80, 0xeb51c0, 0xc441a244e0, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5770, 0xc420c65768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc441a244e0, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc441a244e0, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc421dc5770, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc441a244e0, 0xcdca6e, 0x3, 0x0, 0xc421dc5770, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc441a244e0, 0xcdca6e, 0x3, 0x0, 0xc421dc5770, 0x3317a3c2fca1, 0x1301f60, 0x2540b8a34)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc441a244e0, 0xc422c1fa00, 0xeb1020, 0xc421dc5770, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc441a244e0, 0xc422c1fa00, 0xc45a4196a0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc420c65ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc42296c2c0, 0x12, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc420c65ca8, 0xcdca6e, 0x3, 0xc42296c2c0, 0x12, 0x4, 0x2, 0xc42296c2c0, 0xc42296c2ce)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc42296c2c0, 0x12, 0x2540be400, 0xc437c94180, 0x4, 0xc42296c2c0, 0x12)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc436a8da00, 0x33154fb714e3)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc436a8da00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc436a8da00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223839 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809b200)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223920 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc441a24420, 0xc422c1f980, 0xc458c8b7a0, 0xc458c8b740)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 215267 [select]:
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs(0xc459156c80, 0xec8b80, 0xc42046e000, 0xc4417ce880, 0xc43f1bca80, 0xc438afa540)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:741 +0x9c5
+created by github.com/FactomProject/factomd/state.NewProcessList
+	/go/src/github.com/FactomProject/factomd/state/processList.go:1429 +0xbd2
+
+goroutine 223841 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc4422e0c60, 0xc443eed580, 0xc45ce4e480, 0xc45ce4e420)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 219816 [select]:
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs(0xc42e4a7980, 0xec8b80, 0xc42046e000, 0xc43e784000, 0xc43df9c000, 0xc436b48840)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:741 +0x9c5
+created by github.com/FactomProject/factomd/state.NewProcessList
+	/go/src/github.com/FactomProject/factomd/state/processList.go:1429 +0xbd2
+
+goroutine 223907 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc436a8da00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223958 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc441a247e0, 0xc422c1ff80, 0xc458c8be60, 0xc458c8be00)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223887 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c47b0, 0x77, 0xc457cedc80)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc45d87b898, 0x77, 0xc425b62500, 0xc425b62548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc45d87b898, 0xc425b62500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc45d87b880, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc45d87b880, 0xeb51c0, 0xc42300cd20, 0x0, 0x0, 0xeae180, 0xc4576a56a0, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc45d87b880, 0xeb51c0, 0xc42300cd20, 0xeb9e80, 0x0, 0xeb9e80, 0xc43fc15d40, 0xc425b62768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc42300cd20, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc42300cd20, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc43fc15d40, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc42300cd20, 0xcdca6e, 0x3, 0x0, 0xc43fc15d40, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc42300cd20, 0xcdca6e, 0x3, 0x0, 0xc43fc15d40, 0x3317a3be7025, 0x1301f60, 0x2540b9ef6)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc42300cd20, 0xc45d87b800, 0xeb1020, 0xc43fc15d40, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc42300cd20, 0xc45d87b800, 0xc45a4cc8d0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc425b62ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc4576a5660, 0x11, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc425b62ca8, 0xcdca6e, 0x3, 0xc4576a5660, 0x11, 0x4, 0x2, 0xc4576a5660, 0xc4576a566d)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc4576a5660, 0x11, 0x2540be400, 0xc438a1ad8c, 0x4, 0xc4576a5660, 0x11)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc436a8d400, 0x33154fb2827e)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc436a8d400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc436a8d400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223971 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc4422e0d80, 0xc443eed780, 0xc45ce4e6c0, 0xc45ce4e660)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223954 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc441a24540, 0xc422c1fb80, 0xc458c8b9e0, 0xc458c8b980)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223924 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809a800)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223904 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c4880, 0x77, 0xc44143c600)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc437f0d398, 0x77, 0xc439650500, 0xc439650548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc437f0d398, 0xc439650500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc437f0d380, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc437f0d380, 0xeb51c0, 0xc422cb51a0, 0x0, 0x0, 0xeae180, 0xc422cca500, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc437f0d380, 0xeb51c0, 0xc422cb51a0, 0xeb9e80, 0x0, 0xeb9e80, 0xc456e0b2c0, 0xc439650768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc422cb51a0, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc422cb51a0, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc456e0b2c0, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc422cb51a0, 0xcdca6e, 0x3, 0x0, 0xc456e0b2c0, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc422cb51a0, 0xcdca6e, 0x3, 0x0, 0xc456e0b2c0, 0x3317a3df4728, 0x1301f60, 0x2540bcf92)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc422cb51a0, 0xc437f0d300, 0xeb1020, 0xc456e0b2c0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc422cb51a0, 0xc437f0d300, 0xc439418cb0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc439650ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc422cca4e0, 0x13, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc439650ca8, 0xcdca6e, 0x3, 0xc422cca4e0, 0x13, 0x4, 0x2, 0xc422cca4e0, 0xc422cca4ef)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc422cca4e0, 0x13, 0x2540be400, 0xc4374d0980, 0x4, 0xc422cca4e0, 0x13)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809b600, 0x33154fd35e44)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809b600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809b600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223915 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809b000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223916 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809b400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223926 [sleep]:
+time.Sleep(0x1bf08eb000)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/common/messages/electionMsgs.Fault(0xc44127a000, 0x2472e, 0x7, 0x3d1, 0xc44127a1a0, 0x464e01, 0x1bf08eb000)
+	/go/src/github.com/FactomProject/factomd/common/messages/electionMsgs/eomSigInternal.go:87 +0x78
+created by github.com/FactomProject/factomd/common/messages/electionMsgs.(*EomSigInternal).ElectionProcess
+	/go/src/github.com/FactomProject/factomd/common/messages/electionMsgs/eomSigInternal.go:168 +0x39f
+
+goroutine 223914 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809b000)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223973 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc4422e0ea0, 0xc443eed980, 0xc45ce4e900, 0xc45ce4e8a0)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 215224 [runnable]:
+time.Sleep(0x1312d00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs.func6(0xc439f15400, 0xec8b80, 0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:717 +0x7d
+created by github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs
+	/go/src/github.com/FactomProject/factomd/state/processList.go:710 +0x303
+
+goroutine 223848 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc436a8d400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 212907 [select]:
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs(0xc42007d300, 0xec8b80, 0xc42046e000, 0xc4417cdb00, 0xc43e991500, 0xc43f021380)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:741 +0x9c5
+created by github.com/FactomProject/factomd/state.NewProcessList
+	/go/src/github.com/FactomProject/factomd/state/processList.go:1429 +0xbd2
+
+goroutine 223851 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc436a8dc00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 197613 [select]:
+net/http.(*persistConn).writeLoop(0xc44a5c0b40)
+	/usr/local/go/src/net/http/transport.go:1822 +0x14b
+created by net/http.(*Transport).dialConn
+	/usr/local/go/src/net/http/transport.go:1238 +0x97f
+
+goroutine 223849 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc436a8d600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 223972 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc4422e0de0, 0xc443eed880, 0xc45ce4e7e0, 0xc45ce4e780)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223957 [select]:
+net.(*netFD).connect.func2(0xeb51c0, 0xc441a246c0, 0xc422c1fe80, 0xc458c8bd40, 0xc458c8bce0)
+	/usr/local/go/src/net/fd_unix.go:129 +0xde
+created by net.(*netFD).connect
+	/usr/local/go/src/net/fd_unix.go:128 +0x286
+
+goroutine 223856 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809a400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223847 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc436a8d400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 217480 [select]:
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs(0xc44aa1a000, 0xec8b80, 0xc42046e000, 0xc4417cf600, 0xc441b79500, 0xc438992d80)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:741 +0x9c5
+created by github.com/FactomProject/factomd/state.NewProcessList
+	/go/src/github.com/FactomProject/factomd/state/processList.go:1429 +0xbd2
+
+goroutine 223838 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809aa00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c
+
+goroutine 223898 [IO wait]:
+internal/poll.runtime_pollWait(0x7fd6650c4060, 0x77, 0xc44143c180)
+	/usr/local/go/src/runtime/netpoll.go:173 +0x57
+internal/poll.(*pollDesc).wait(0xc437f0d098, 0x77, 0xc45d439500, 0xc45d439548, 0x436414)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:85 +0x9b
+internal/poll.(*pollDesc).waitWrite(0xc437f0d098, 0xc45d439500, 0x28, 0x710ed6)
+	/usr/local/go/src/internal/poll/fd_poll_runtime.go:94 +0x3d
+internal/poll.(*FD).WaitWrite(0xc437f0d080, 0xe33308, 0xeb51c0)
+	/usr/local/go/src/internal/poll/fd_unix.go:440 +0x37
+net.(*netFD).connect(0xc437f0d080, 0xeb51c0, 0xc422cb5080, 0x0, 0x0, 0xeae180, 0xc422cca440, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/fd_unix.go:152 +0x299
+net.(*netFD).dial(0xc437f0d080, 0xeb51c0, 0xc422cb5080, 0xeb9e80, 0x0, 0xeb9e80, 0xc456e0b1a0, 0xc45d439768, 0x72cdce)
+	/usr/local/go/src/net/sock_posix.go:142 +0xe9
+net.socket(0xeb51c0, 0xc422cb5080, 0xcdca6e, 0x3, 0x2, 0x1, 0x0, 0x0, 0xeb9e80, 0x0, ...)
+	/usr/local/go/src/net/sock_posix.go:93 +0x1a6
+net.internetSocket(0xeb51c0, 0xc422cb5080, 0xcdca6e, 0x3, 0xeb9e80, 0x0, 0xeb9e80, 0xc456e0b1a0, 0x1, 0x0, ...)
+	/usr/local/go/src/net/ipsock_posix.go:141 +0x129
+net.doDialTCP(0xeb51c0, 0xc422cb5080, 0xcdca6e, 0x3, 0x0, 0xc456e0b1a0, 0x1320ee0, 0x0, 0x0)
+	/usr/local/go/src/net/tcpsock_posix.go:62 +0xb9
+net.dialTCP(0xeb51c0, 0xc422cb5080, 0xcdca6e, 0x3, 0x0, 0xc456e0b1a0, 0x3317a3d3fde3, 0x1301f60, 0x2540b914f)
+	/usr/local/go/src/net/tcpsock_posix.go:58 +0xe4
+net.dialSingle(0xeb51c0, 0xc422cb5080, 0xc437f0d000, 0xeb1020, 0xc456e0b1a0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:547 +0x375
+net.dialSerial(0xeb51c0, 0xc422cb5080, 0xc437f0d000, 0xc439418bd0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/go/src/net/dial.go:515 +0x22d
+net.(*Dialer).DialContext(0xc45d439ca8, 0xeb5180, 0xc420038390, 0xcdca6e, 0x3, 0xc422cca420, 0x13, 0x0, 0x0, 0x0, ...)
+	/usr/local/go/src/net/dial.go:397 +0x678
+net.(*Dialer).Dial(0xc45d439ca8, 0xcdca6e, 0x3, 0xc422cca420, 0x13, 0x4, 0x2, 0xc422cca420, 0xc422cca42f)
+	/usr/local/go/src/net/dial.go:320 +0x75
+net.DialTimeout(0xcdca6e, 0x3, 0xc422cca420, 0x13, 0x2540be400, 0xc436d27a00, 0x4, 0xc422cca420, 0x13)
+	/usr/local/go/src/net/dial.go:306 +0xa6
+github.com/FactomProject/factomd/p2p.(*Connection).dial(0xc44809aa00, 0x33154fc814a8)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:325 +0xae
+github.com/FactomProject/factomd/p2p.(*Connection).dialLoop(0xc44809aa00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:299 +0xc8
+github.com/FactomProject/factomd/p2p.(*Connection).runLoop(0xc44809aa00)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:255 +0x200
+created by github.com/FactomProject/factomd/p2p.(*Connection).Start
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:216 +0x94
+
+goroutine 223857 [sleep]:
+time.Sleep(0x5f5e100)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processSends(0xc44809a600)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:418 +0x3f1
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:222 +0x57
+
+goroutine 212938 [runnable]:
+time.Sleep(0x1312d00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs.func6(0xc43f1b2000, 0xec8b80, 0xc42046e000)
+	/go/src/github.com/FactomProject/factomd/state/processList.go:717 +0x7d
+created by github.com/FactomProject/factomd/state.(*ProcessList).makeMMRs
+	/go/src/github.com/FactomProject/factomd/state/processList.go:710 +0x303
+
+goroutine 223917 [sleep]:
+time.Sleep(0x3b9aca00)
+	/usr/local/go/src/runtime/time.go:102 +0x166
+github.com/FactomProject/factomd/p2p.(*Connection).processReceives(0xc44809b400)
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:513 +0x233
+created by github.com/FactomProject/factomd/p2p.(*Connection).runLoop
+	/go/src/github.com/FactomProject/factomd/p2p/connection.go:223 +0x7c

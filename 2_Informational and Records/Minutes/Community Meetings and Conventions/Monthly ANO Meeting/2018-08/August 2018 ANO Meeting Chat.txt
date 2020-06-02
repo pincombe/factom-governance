@@ -1,0 +1,24 @@
+13:53:52	 From  LayerTech Neo : Hi all,  August 2018 ANO zoom meeting room is open. Please fill out attendance yourselves to speed up rollcall. https://docs.google.com/spreadsheets/d/14J9slha-hAWCaMGgcsxK9Nz6uvSKuk3LkaG-sBBfa7k/
+13:59:41	 From  LayerTech Neo : Hi all,  August 2018 ANO zoom meeting room is open. Please fill out attendance yourselves to speed up rollcall. https://docs.google.com/spreadsheets/d/14J9slha-hAWCaMGgcsxK9Nz6uvSKuk3LkaG-sBBfa7k/
+14:04:59	 From  LayerTech - Xavier : everyone with link should have view access
+14:05:01	 From  LayerTech - Xavier : just refresh
+14:06:47	 From  LayerTech - Xavier : Nolan
+14:06:53	 From  Samuel Vanderwaal : Nolan and Kyle
+14:09:58	 From  StevenM : my microphone is not working. not that I'm trying to talk...
+14:10:34	 From  LayerTech Neo : Steven your from TFA right?
+14:11:47	 From  StevenM : yes
+14:12:04	 From  LayerTech Neo : thanks. i'll record your attendance.
+14:12:21	 From  StevenM : zoom gives my linux machine problems
+14:12:22	 From  StevenM : thanks
+14:26:17	 From  LayerTech Neo : Poll #1 - 
+14:26:17	 From  LayerTech Neo : https://factomize.com/forums/threads/08-30-2018-monthly-ano-poll-1.718/
+14:34:15	 From  DChapman : Conference Poll: https://factomize.com/forums/threads/ano-summit-poll.719/
+14:45:39	 From  JulianFT : 8 days for review + vote Matt
+14:51:11	 From  BobbyEK(FedThis) : Just for awareness on that commit style: the recent thread/poll on Endorsing the Exchange Committee, something clear cut, still took 10 days for everyone to comment/vote.
+14:51:34	 From  BobbyEK(FedThis) : So hope if we do the commit style, everyone can be quick in their response.
+14:52:43	 From  [BIF] Niels : Yupz support both the proposall of Mat and the comment of BobbyEK
+14:55:53	 From  Ben Jeater [BuildingIM] : https://factomize.com/forums/threads/guide-pay-september-2018-renewal.692/
+15:06:56	 From  Samuel Vanderwaal : factoshi.io
+15:08:09	 From  DChapman : Great job Go Immutable!
+15:08:43	 From  Samuel Vanderwaal : That's excellent
+15:08:47	 From  [BIF] Niels : Yes great work
