@@ -6,43 +6,59 @@
 
 **Doc 004**
 
-+----------------+----------------+----------------+----------------+
-| Document       |                |                |                |
-| control        |                |                |                |
-| matrix\*       |                |                |                |
-+================+================+================+================+
-| **ENT          | **PART OF      | **APPROVAL     | **APPROVAL     |
-| ITY/ENTITIES** | DOCUMENT**     | TYPE**         | AUTHORITY FOR  |
-|                |                |                | THIS           |
-|                |                |                | DOCUMENT**     |
-+----------------+----------------+----------------+----------------+
-| Standing       | No highlight   | ⅘ guide        | Yes            |
-| parties\*\*    |                | approval       |                |
-|                |                |                |                |
-|                |                | ⅗ ANO approval |                |
-+----------------+----------------+----------------+----------------+
-| Factom         | Text/tables    | ⅘ Guide        | No             |
-| Guides\*\*     | highlighted:   | approval       |                |
-|                | ORANGE         |                |                |
-+----------------+----------------+----------------+----------------+
-| Not applicable | Not applicable | Single entity  | No             |
-|                |                | approval       |                |
-+----------------+----------------+----------------+----------------+
+<table>
+<thead>
+<tr class="header">
+<th>Document control matrix*</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ENTITY/ENTITIES</strong></td>
+<td><strong>PART OF DOCUMENT</strong></td>
+<td><strong>APPROVAL TYPE</strong></td>
+<td><strong>APPROVAL AUTHORITY FOR THIS DOCUMENT</strong></td>
+</tr>
+<tr class="even">
+<td>Standing parties**</td>
+<td>No highlight</td>
+<td><p>⅘ guide approval</p>
+<p>⅗ ANO approval</p></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Factom Guides**</td>
+<td>Text/tables highlighted: ORANGE</td>
+<td>⅘ Guide approval</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Not applicable</td>
+<td>Not applicable</td>
+<td>Single entity approval</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
-\* See [[Doc 002 - Administration of governance- and community
-documents]{.underline}](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
+\* See [<span class="underline">Doc 002 - Administration of governance-
+and community
+documents</span>](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
 Chapter 3.
 
-\*\* See [[Doc 001 - *Factom
-Governance*]{.underline}](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
+\*\* See [<span class="underline">Doc 001 - *Factom
+Governance*</span>](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
 Definitions.
 
-  VERSION   DATE         CHANGED BY                CHANGES
-  --------- ------------ ------------------------- -------------------
-  1.0       2019-04-07   Factom Standing Parties   Ratified document
-                                                   
-                                                   
-                                                   
+| VERSION | DATE       | CHANGED BY              | CHANGES           |
+|---------|------------|-------------------------|-------------------|
+| 1.0     | 2019-04-07 | Factom Standing Parties | Ratified document |
+|         |            |                         |                   |
+|         |            |                         |                   |
+|         |            |                         |                   |
 
 Introduction
 ============
@@ -58,7 +74,7 @@ Introduction
 > legal entity to house and manage certain assets and activities for the
 > Factom Community.
 
-2.  Website Committee
+1.  Website Committee
     =================
 
     1.  The creation of the Website Committee shall be voted upon by the
@@ -81,12 +97,12 @@ Introduction
 > factomprotocol.org remains as the community website;
 >
 > \(vi\) one member from an Authority Node Operator who shall be elected
-> in the manner set forth in Section 2.2.1 ("ANO Member");
+> in the manner set forth in Section 2.2.1 (“ANO Member”);
 >
 > \(vii\) one FCT holder (or a representative thereof in the event the
 > FCT holder is not a natural person), who shall not be affiliated with
 > any Authority Node Operator and who shall be elected in the manner set
-> forth in Section 2.2.1 ("FCT Holder Member"); and
+> forth in Section 2.2.1 (“FCT Holder Member”); and
 >
 > \(viii\) one member from and appointed by the grantor of each
 > additional website to be conveyed to the nonprofit. Grantors are not
@@ -112,24 +128,24 @@ Introduction
     1.  An independent thread shall be created on the community forum or
         > any other platform utilized by the Factom Community for each
         > type of candidates. The thread for the ANO candidates shall be
-        > titled "ANO Member Candidates for the Website Committee" and
-        > the thread for the FCT Holder candidates shall be titled "FCT
-        > Holder Candidates for the Website Committee." The threads
+        > titled “ANO Member Candidates for the Website Committee” and
+        > the thread for the FCT Holder candidates shall be titled “FCT
+        > Holder Candidates for the Website Committee.” The threads
         > shall remain open for seventy-two (72) hours.
 
     2.  Candidates can announce they are running in the respective
         > thread and provide their experience and knowledge pertaining
         > to running a website.
 
-    3.  After the seventy-two (72) hours, a single "Minor Discussion"
-        > poll will be started with the title, "Elect members to the
-        > Website Committee".
+    3.  After the seventy-two (72) hours, a single “Minor Discussion”
+        > poll will be started with the title, “Elect members to the
+        > Website Committee”.
 
     4.  For the duration of the minor discussion, the Standing Parties
         > can ask the candidates questions.
 
-    5.  The poll will ask the question, "Which candidate(s) should join
-        > the Website Committee"?.
+    5.  The poll will ask the question, “Which candidate(s) should join
+        > the Website Committee”?.
 
     6.  The answers will be the names of the candidates in alphabetical
         > order with \[ANO\] or \[FCT Holder\] after the names.
@@ -178,7 +194,7 @@ Introduction
 > entity/group ceases to qualify to appoint any member to the Website
 > Committee.
 
-3.  The Website Committee shall be empowered to perform the following:
+1.  The Website Committee shall be empowered to perform the following:
 
     1.  Vote on proposed changes to the website(s).
 
@@ -201,7 +217,7 @@ Introduction
         > where inactivity is defined as missing two consecutive votes
         > without a valid reason.
 
-4.  The Website Committee shall not be empowered with the following:
+2.  The Website Committee shall not be empowered with the following:
 
     1.  Hold the domain(s) for the website.
 
@@ -212,7 +228,7 @@ Introduction
 > The powers set forth under this Section 2.4 shall be exercised by the
 > nonprofit corporation.
 
-5.  Voting
+1.  Voting
 
     1.  Any vote not involving a sensitive issue shall be conducted in
         > public. The Website Committee shall determine, at its sole
@@ -222,14 +238,13 @@ Introduction
         > members and a majority of the votes cast passes or rejects a
         > proposal.
 
-6.  Committee members will not be compensated but shall be eligible for
-    > "Award Grants" which can be submitted by anyone and would need to
+2.  Committee members will not be compensated but shall be eligible for
+    > “Award Grants” which can be submitted by anyone and would need to
     > be approved by the Standing Parties via the normal grant process.
 
-```{=html}
 <!-- -->
-```
-3.  Termination
+
+1.  Termination
     ===========
 
     1.  The Website Committee can be terminated by the Standing Parties

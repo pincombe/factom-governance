@@ -4,152 +4,185 @@
 
 **DOC 001**
 
-+----------------+----------------+----------------+----------------+
-| Document       |                |                |                |
-| control        |                |                |                |
-| matrix\*       |                |                |                |
-+================+================+================+================+
-| **ENT          | **PART OF      | **APPROVAL     | **APPROVAL     |
-| ITY/ENTITIES** | DOCUMENT**     | TYPE**         | AUTHORITY FOR  |
-|                |                |                | THIS           |
-|                |                |                | DOCUMENT**     |
-+----------------+----------------+----------------+----------------+
-| Standing       | No highlight   | ⅘ guide        | Yes            |
-| Parties\*\*    |                | approval       |                |
-|                |                |                |                |
-|                |                | ⅗ ANO approval |                |
-+----------------+----------------+----------------+----------------+
-| Factom         | Text/tables    | ⅘ Guide        | No             |
-| Guides\*\*     | highlighted:   | approval       |                |
-|                | ORANGE         |                |                |
-+----------------+----------------+----------------+----------------+
-| Not applicable | Not applicable | Single entity  | No             |
-|                |                | approval       |                |
-+----------------+----------------+----------------+----------------+
+<table>
+<thead>
+<tr class="header">
+<th>Document control matrix*</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ENTITY/ENTITIES</strong></td>
+<td><strong>PART OF DOCUMENT</strong></td>
+<td><strong>APPROVAL TYPE</strong></td>
+<td><strong>APPROVAL AUTHORITY FOR THIS DOCUMENT</strong></td>
+</tr>
+<tr class="even">
+<td>Standing Parties**</td>
+<td>No highlight</td>
+<td><p>⅘ guide approval</p>
+<p>⅗ ANO approval</p></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Factom Guides**</td>
+<td>Text/tables highlighted: ORANGE</td>
+<td>⅘ Guide approval</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Not applicable</td>
+<td>Not applicable</td>
+<td>Single entity approval</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
-> \* See [[Doc 002 - Administration of governance- and community
-> documents]{.underline}](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
+> \* See [<span class="underline">Doc 002 - Administration of
+> governance- and community
+> documents</span>](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
 > Chapter 3.
 >
-> \*\* See [[Doc 001 - *Factom
-> Governance*]{.underline}](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
+> \*\* See [<span class="underline">Doc 001 - *Factom
+> Governance*</span>](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
 > Definitions.
 
-  VERSION   DRAFT DATE   DRAFT BY           CHANGES                                                                                                                                            APPROVED BY        APPROVED DATE
-  --------- ------------ ------------------ -------------------------------------------------------------------------------------------------------------------------------------------------- ------------------ ---------------
-  1.0       N/A          Factom Community   Final document for ratification                                                                                                                    Factom Community   2018-04-07
-  1.1       N/A          Factom Guides      Version 1.1                                                                                                                                        Factom Guides      2018-04-17
-  1.2       N/A          Factom Guides      Version 1.2                                                                                                                                        Factom Guides      2018-05-04
-  1.3       N/A          Factom Guides      Version 1.3                                                                                                                                        Factom Guides      2018-06-17
-  1.4       2019-02-21   Factom Guides      Required changes to make document compatible with other community documents (Doc 100, Doc 101, Doc 002). Deleted text about guide initial roles.   Standing Parties   2019-03-01
-  1.5       2019-04-22   Factom Guides      Assorted changes to section 2, 3 and 4.                                                                                                            Standing Parties   2019-05-06
-  1.6       2019-10-28   Factom Guides      Authority Set removal section 3.3, Support Categories section 6.2                                                                                  Standing Parties   2019-11-13
+| VERSION | DRAFT DATE | DRAFT BY         | CHANGES                                                                                                                                          | APPROVED BY      | APPROVED DATE |
+|---------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------|---------------|
+| 1.0     | N/A        | Factom Community | Final document for ratification                                                                                                                  | Factom Community | 2018-04-07    |
+| 1.1     | N/A        | Factom Guides    | Version 1.1                                                                                                                                      | Factom Guides    | 2018-04-17    |
+| 1.2     | N/A        | Factom Guides    | Version 1.2                                                                                                                                      | Factom Guides    | 2018-05-04    |
+| 1.3     | N/A        | Factom Guides    | Version 1.3                                                                                                                                      | Factom Guides    | 2018-06-17    |
+| 1.4     | 2019-02-21 | Factom Guides    | Required changes to make document compatible with other community documents (Doc 100, Doc 101, Doc 002). Deleted text about guide initial roles. | Standing Parties | 2019-03-01    |
+| 1.5     | 2019-04-22 | Factom Guides    | Assorted changes to section 2, 3 and 4.                                                                                                          | Standing Parties | 2019-05-06    |
+| 1.6     | 2019-10-28 | Factom Guides    | Authority Set removal section 3.3, Support Categories section 6.2                                                                                | Standing Parties | 2019-11-13    |
 
 Table of Contents
 
-[[Definitions]{.underline}](#definitions)
+[<span class="underline">Definitions</span>](#definitions)
 
-[[Guides]{.underline}](#guides)
+[<span class="underline">Guides</span>](#guides)
 
-> [[Guide eligibility
-> standards]{.underline}](#guide-eligibility-standards)
+> [<span class="underline">Guide eligibility
+> standards</span>](#guide-eligibility-standards)
 >
-> [[Guide responsibilities]{.underline}](#guide-responsibilities)
+> [<span class="underline">Guide
+> responsibilities</span>](#guide-responsibilities)
 >
-> [[Guide Election and
-> Removal]{.underline}](#guide-election-and-removal)
+> [<span class="underline">Guide Election and
+> Removal</span>](#guide-election-and-removal)
 >
-> [[Guide remuneration]{.underline}](#guide-remuneration)
+> [<span class="underline">Guide
+> remuneration</span>](#guide-remuneration)
 
-[[Authority Set]{.underline}](#authority-set)
+[<span class="underline">Authority Set</span>](#authority-set)
 
-> [[Elections]{.underline}](#applications)
+> [<span class="underline">Elections</span>](#applications)
 >
-> [[Campaign document]{.underline}](#_jqagr7fz3m9)
+> [<span class="underline">Campaign document</span>](#_jqagr7fz3m9)
 >
-> [[Campaign factors]{.underline}](#campaign-factors)
+> [<span class="underline">Campaign factors</span>](#campaign-factors)
 >
-> [[Historical node reliability]{.underline}](#testnet-participation)
+> [<span class="underline">Historical node
+> reliability</span>](#testnet-participation)
 >
-> [[Support of Protocol]{.underline}](#support-of-protocol)
+> [<span class="underline">Support of
+> Protocol</span>](#support-of-protocol)
 >
-> [[Node technical specifications and
-> reliability]{.underline}](#node-technical-specifications-and-reliability)
+> [<span class="underline">Node technical specifications and
+> reliability</span>](#node-technical-specifications-and-reliability)
 >
-> [[Location]{.underline}](#location)
+> [<span class="underline">Location</span>](#location)
 >
-> [[Standing Parties]{.underline}](#_2rf3nam11zr8)
+> [<span class="underline">Standing Parties</span>](#_2rf3nam11zr8)
 >
-> [[Authority set removal]{.underline}](#_f14io3z8jexb)
+> [<span class="underline">Authority set removal</span>](#_f14io3z8jexb)
 >
-> [[Authority Independence]{.underline}](#authority-independence)
+> [<span class="underline">Authority
+> Independence</span>](#authority-independence)
 
-[[Protocol Support Grants]{.underline}](#protocol-support-grants)
+[<span class="underline">Protocol Support
+Grants</span>](#protocol-support-grants)
 
-> [[Grant Proposals]{.underline}](#grant-proposals)
+> [<span class="underline">Grant Proposals</span>](#grant-proposals)
 >
-> [[Grant Approval Process]{.underline}](#grant-approval)
+> [<span class="underline">Grant Approval
+> Process</span>](#grant-approval)
 >
-> [[Grant Support]{.underline}](#_uu7tsqi9kyzn)
+> [<span class="underline">Grant Support</span>](#_uu7tsqi9kyzn)
 >
-> [[Grant award process]{.underline}](#_6pzh732y1m6)
+> [<span class="underline">Grant award process</span>](#_6pzh732y1m6)
 >
-> [[Sunset]{.underline}](#_x8l61sfo94t5)
+> [<span class="underline">Sunset</span>](#_x8l61sfo94t5)
 >
-> [[Ongoing Governance Grants]{.underline}](#ongoing-governance-grants)
+> [<span class="underline">Ongoing Governance
+> Grants</span>](#ongoing-governance-grants)
 >
-> [[Anchor master]{.underline}](#anchor-master)
+> [<span class="underline">Anchor master</span>](#anchor-master)
 >
-> [[Oracle Master]{.underline}](#oracle-master)
+> [<span class="underline">Oracle Master</span>](#oracle-master)
 >
-> [[Guide Remuneration Grant]{.underline}](#guide-remuneration-grant)
+> [<span class="underline">Guide Remuneration
+> Grant</span>](#guide-remuneration-grant)
 
-[[Token Supply]{.underline}](#token-supply)
+[<span class="underline">Token Supply</span>](#token-supply)
 
-> [[Token Rewards]{.underline}](#token-rewards)
+> [<span class="underline">Token Rewards</span>](#token-rewards)
 >
-> [[Grant Pool Allocation]{.underline}](#grant-pool-allocation)
+> [<span class="underline">Grant Pool
+> Allocation</span>](#grant-pool-allocation)
 >
-> [[Grant Rewards]{.underline}](#_1clgkc2k7f57)
+> [<span class="underline">Grant Rewards</span>](#_1clgkc2k7f57)
 >
-> [[Authority Set Veto]{.underline}](#authority-set-veto)
+> [<span class="underline">Authority Set
+> Veto</span>](#authority-set-veto)
 
-[[Standing Parties]{.underline}](#standing-parties)
+[<span class="underline">Standing Parties</span>](#standing-parties)
 
-> [[Requirements for a Standing
-> Party]{.underline}](#requirements-for-a-standing-party)
+> [<span class="underline">Requirements for a Standing
+> Party</span>](#requirements-for-a-standing-party)
 >
-> [[Support Categories]{.underline}](#support-categories)
+> [<span class="underline">Support
+> Categories</span>](#support-categories)
 >
-> [[Support category: Proof of
-> stake]{.underline}](#support-category-proof-of-stake)
+> [<span class="underline">Support category: Proof of
+> stake</span>](#support-category-proof-of-stake)
 >
-> [[Retrospective staking]{.underline}](#retrospective-staking)
+> [<span class="underline">Retrospective
+> staking</span>](#retrospective-staking)
 >
-> [[Prospective Staking]{.underline}](#prospective-staking)
+> [<span class="underline">Prospective
+> Staking</span>](#prospective-staking)
 >
-> [[Support category: Proof of
-> use]{.underline}](#support-category-proof-of-use)
+> [<span class="underline">Support category: Proof of
+> use</span>](#support-category-proof-of-use)
 >
-> [[Support category: Guide]{.underline}](#support-category-guide)
+> [<span class="underline">Support category:
+> Guide</span>](#support-category-guide)
 >
-> [[Support category: Authority
-> set]{.underline}](#support-category-authority-set)
+> [<span class="underline">Support category: Authority
+> set</span>](#support-category-authority-set)
 >
-> [[Support category:
-> Efficiency]{.underline}](#support-category-efficiency)
+> [<span class="underline">Support category:
+> Efficiency</span>](#support-category-efficiency)
 >
-> [[Support category:
-> Contribution]{.underline}](#support-category-contribution)
+> [<span class="underline">Support category:
+> Contribution</span>](#support-category-contribution)
 >
-> [[Delegation]{.underline}](#delegation)
+> [<span class="underline">Delegation</span>](#delegation)
 >
-> [[Delegation Process]{.underline}](#delegation-process)
+> [<span class="underline">Delegation
+> Process</span>](#delegation-process)
 >
-> [[Delegation Penalty]{.underline}](#delegation-penalty)
+> [<span class="underline">Delegation
+> Penalty</span>](#delegation-penalty)
 
-[[Amendments and additional community
-documents]{.underline}](#amendments-and-additional-community-documents)
+[<span class="underline">Amendments and additional community
+documents</span>](#amendments-and-additional-community-documents)
 
 Definitions
 ===========
@@ -159,11 +192,11 @@ Definitions
 > Unless explicitly modified to refer to other protocols, the term
 > protocol in this document refers to the Factom protocol, which is
 > implemented in software, and run upon servers run by many independent
-> users and parties. The protocol's definition is substantially defined
-> by the software run by the [[authority
-> set]{.underline}](#kix.lres0524adra). The protocol creates an
-> immutable record of data, and distributes it over the participating
-> nodes on the network.
+> users and parties. The protocol’s definition is substantially defined
+> by the software run by the [<span class="underline">authority
+> set</span>](#kix.lres0524adra). The protocol creates an immutable
+> record of data, and distributes it over the participating nodes on the
+> network.
 >
 > **Governance**
 >
@@ -247,7 +280,7 @@ Definitions
 > Efficiency in this document refers to how much we can reduce the cost
 > of running the protocol. To the degree we can increase efficiency
 > (reduce costs of running the protocol), we can increase the support of
-> the grant pool. As such, the higher an Authority Node's deferment to
+> the grant pool. As such, the higher an Authority Node’s deferment to
 > the protocol, the higher its efficiency.
 >
 > **Standing Party**
@@ -384,9 +417,9 @@ Definitions
     --------------------------
 
     1.  The processes to elect and remove a Guide and other relevant
-        > terms are supplemented by [[Doc 100: Guide Election and
-        > Removal
-        > Processes]{.underline}](https://factomize.com/forums/documents/doc-100-guide-election-and-removal-process.57/).
+        > terms are supplemented by [<span class="underline">Doc 100:
+        > Guide Election and Removal
+        > Processes</span>](https://factomize.com/forums/documents/doc-100-guide-election-and-removal-process.57/).
         > Upon completion of the necessary infrastructure, relevant
         > governance and community documents shall be amended to
         > incorporate the on-chain election process.
@@ -407,9 +440,10 @@ Authority Set
 
 > The Authority Set is comprised of entities (and hardware + software
 > they control) to build blocks on the Factom blockchain. These entities
-> are Authority Node Operators ("ANOs") and are elected to the Authority
-> Set in accordance with [[Doc 005: ANO Election and Demotion
-> System]{.underline}](https://factomize.com/forums/documents/doc-005-ano-election-and-demotion-system.107/)
+> are Authority Node Operators (“ANOs”) and are elected to the Authority
+> Set in accordance with [<span class="underline">Doc 005: ANO Election
+> and Demotion
+> System</span>](https://factomize.com/forums/documents/doc-005-ano-election-and-demotion-system.107/)
 > and the principles set out in this chapter. Addresses specified by the
 > individual ANOs are able to receive newly created FCT as reward for
 > maintaining the hardware + software which advances progress of the
@@ -446,8 +480,8 @@ Authority Set
         1.  Applicants commitment to the support of the Factom protocol
             > will be a factor considered.
 
-        2.  An application can pledge a level of
-            > [[efficiency]{.underline}](#kix.43gwl7p2gek8).
+        2.  An application can pledge a level of [<span
+            > class="underline">efficiency</span>](#kix.43gwl7p2gek8).
 
     4.  ### Node technical specifications and reliability
 
@@ -471,9 +505,9 @@ Authority Set
 
     6.  ### Authority Server Specifications
 
-        1.  The minimum server specifications are detailed in [[Doc
-            > 202 - Authority Server Minimum
-            > Specifications]{.underline}](https://docs.google.com/document/d/1MF2E9G_hZ3bD0EwKlbsTNvaHMcHqJkLAIfYJb-AGJfg/edit?usp=sharing),
+        1.  The minimum server specifications are detailed in [<span
+            > class="underline">Doc 202 - Authority Server Minimum
+            > Specifications</span>](https://docs.google.com/document/d/1MF2E9G_hZ3bD0EwKlbsTNvaHMcHqJkLAIfYJb-AGJfg/edit?usp=sharing),
             > and applicants should ensure to meet these when submitting
             > their application.
 
@@ -482,13 +516,13 @@ Authority Set
 
     1.  ### Removal for cause:
 
-        1.  ANOs not meeting the expectations set forth in [[Doc 003:
-            > Authority Node Operator
-            > Expectations]{.underline}](https://drive.google.com/open?id=1IylZOUbY5D3_qbRDDOHSFPIKoVav15h8ojTESpQP3Y0)
+        1.  ANOs not meeting the expectations set forth in [<span
+            > class="underline">Doc 003: Authority Node Operator
+            > Expectations</span>](https://drive.google.com/open?id=1IylZOUbY5D3_qbRDDOHSFPIKoVav15h8ojTESpQP3Y0)
             > may be removed from the Authority Set by the ANO Removal
-            > process defined in [[Doc 101: Removal of ANO from the
-            > Authority Set for
-            > Cause]{.underline}](https://drive.google.com/open?id=1JhdOhz7e93_oSpQ3JzE9YwbH5Y05rnULsOI_hf2UGr4).
+            > process defined in [<span class="underline">Doc 101:
+            > Removal of ANO from the Authority Set for
+            > Cause</span>](https://drive.google.com/open?id=1JhdOhz7e93_oSpQ3JzE9YwbH5Y05rnULsOI_hf2UGr4).
 
         2.  Removed ANOs can campaign to re-enter the Authority Set once
             > the issues are resolved. They will do this through means
@@ -496,10 +530,11 @@ Authority Set
 
     2.  ### Removal for loss of Standing:
 
-        1.  ANOs must maintain a level of Standing as described in [[Doc
-            > 005: ANO Election and Demotion
-            > System]{.underline}](https://factomize.com/forums/documents/doc-005-ano-election-and-demotion-system.107/)
-            > to remain in the Authority Set. Should an ANO's Standing
+        1.  ANOs must maintain a level of Standing as described in
+            > [<span class="underline">Doc 005: ANO Election and
+            > Demotion
+            > System</span>](https://factomize.com/forums/documents/doc-005-ano-election-and-demotion-system.107/)
+            > to remain in the Authority Set. Should an ANO’s Standing
             > fall below the required threshold, the ANO will be removed
             > from the Authority Set for loss of Standing in accordance
             > with the procedures set forth in Doc 005.
@@ -516,7 +551,7 @@ Authority Set
 >
 > The factom protocol will strive to maintain a high degree of
 > independence between authorities. Independence must be enforced
-> socially through campaigns as it can't be measured on the blockchain.
+> socially through campaigns as it can’t be measured on the blockchain.
 
 Protocol Support Grants
 =======================
@@ -526,8 +561,8 @@ Protocol Support Grants
 >
 > The pool is created from efficiency commitments made by Authority Node
 > Operators. The details of the token rewards and the grant pool are
-> discussed in the section on [[Token
-> Supply]{.underline}](#token-supply).
+> discussed in the section on [<span class="underline">Token
+> Supply</span>](#token-supply).
 
 1.  Grant Proposals
     ---------------
@@ -560,23 +595,24 @@ Grant Approval
 
 > Grants will be awarded based on proposals that receive a score of 60
 > or more out of 100. The score comes from using the following weighted
-> set of [[support categories]{.underline}](#kix.brhaw07m3ptq). To
-> influence the rewarding of a grant, one must be a [[standing
-> party]{.underline}](#kix.veu646u0nkzf).
+> set of [<span class="underline">support
+> categories</span>](#kix.brhaw07m3ptq). To influence the rewarding of a
+> grant, one must be a [<span class="underline">standing
+> party</span>](#kix.veu646u0nkzf).
 >
 > Support is divided into a number of categories, and weighted
 > independently to limit opportunities for gaming.
 
-3.  ### Grant Award Process
+1.  ### Grant Award Process
 
     1.  Grants will be awarded on a regular cadence. The Standing
         > Parties will define the cadence of the Grant process.
 
-    2.  Grants are awarded and distributed in accordance with [[Doc
-        > 107 - Factom Grant
-        > Process]{.underline}](https://factomize.com/forums/documents/doc-107-factom-grant-process.76/).
+    2.  Grants are awarded and distributed in accordance with [<span
+        > class="underline">Doc 107 - Factom Grant
+        > Process</span>](https://factomize.com/forums/documents/doc-107-factom-grant-process.76/).
 
-4.  Ongoing Governance Grants 
+2.  Ongoing Governance Grants 
     -------------------------
 
 > The protocol needs to support a number of activities to maintain the
@@ -633,7 +669,7 @@ Token Supply
 > issued for the security of the blockchain. In other words, most of the
 > resources are expended on energy costs rather than development,
 > maintenance, and infrastructure. As the protocol uses anchoring,
-> resources can be expended on a sort of "Proof of Development,"
+> resources can be expended on a sort of “Proof of Development,”
 > extending and developing the protocol and the ecosystem around the
 > protocol. This is the motivation around the Grant Pool design.
 
@@ -684,8 +720,9 @@ Token Supply
         > future time.
 
     5.  Information about how to execute coinbase cancellations can be
-        > found in [[Doc 203 - Cancellation of coinbase
-        > outputs]{.underline}](https://docs.google.com/document/d/1P7w_M8QSU3Z3GUftx4AMWR_jHXkcPgenFgM0wdOFMHc/edit?usp=sharing).
+        > found in [<span class="underline">Doc 203 - Cancellation of
+        > coinbase
+        > outputs</span>](https://docs.google.com/document/d/1P7w_M8QSU3Z3GUftx4AMWR_jHXkcPgenFgM0wdOFMHc/edit?usp=sharing).
 
 Standing Parties
 ================
@@ -694,10 +731,11 @@ Standing Parties
 > protocol process) must qualify in some way. The protocol has a number
 > of mechanisms to define Standing Parties.
 >
-> Factom uses [[DPoS]{.underline}](#kix.5okwvpiloppf) to define the
-> Standing Parties and how support is collected and measured. This is
-> done by defining how the [[PoS]{.underline}](#kix.chafrfq6l9io) is
-> defined, then how it is distributed.
+> Factom uses [<span class="underline">DPoS</span>](#kix.5okwvpiloppf)
+> to define the Standing Parties and how support is collected and
+> measured. This is done by defining how the [<span
+> class="underline">PoS</span>](#kix.chafrfq6l9io) is defined, then how
+> it is distributed.
 >
 > PoS is not as simple as it might first seem. When people can use
 > tokens to stake to make decisions, the game theory is complex, with
@@ -726,7 +764,7 @@ Standing Parties
 > time.
 >
 > Tokens can not be used for multiple categories, by their nature. You
-> can't leave tokens in the grant pool, and stake them. Or buy Entry
+> can’t leave tokens in the grant pool, and stake them. Or buy Entry
 > Credits with them. And a bribe removes the tokens from your control,
 > and can only gain influence if other parties are not engaged in such
 > behavior.
@@ -738,7 +776,7 @@ Standing Parties
 
     2.  The digital identity must have an entry that defines a voting
         > signature. This voting signature can be changed by a properly
-        > signed entry with one of the digital Identity's signing keys.
+        > signed entry with one of the digital Identity’s signing keys.
 
     3.  The digital identity must be registered in the Standing Party
         > Registration chain.
@@ -778,7 +816,7 @@ Standing Parties
 
     3.  #### Prospective Staking
 
-        1.  Tokens can be sent to an address which doesn't allow tokens
+        1.  Tokens can be sent to an address which doesn’t allow tokens
             > to move from it for a predefined period of time.
 
         2.  Token locking functionality is not yet implemented in the
@@ -814,7 +852,8 @@ Standing Parties
     1.  Additionally, an authority server can specify an award of less
         > than the maximum tokens issued to authority servers. Doing so
         > is an indication of efficiency, and the unclaimed tokens are
-        > diverted to the [[Grant Pool]{.underline}](#kix.qj0sc7dzt717).
+        > diverted to the [<span class="underline">Grant
+        > Pool</span>](#kix.qj0sc7dzt717).
 
     2.  Calculating the value of support for efficiency uses a sliding
         > scale with those levels of efficiency (the difference of the
@@ -824,7 +863,7 @@ Standing Parties
         > provides no support.
 
     3.  Efficiency support is calculated on the number of tokens left to
-        > the grant pool. An authority server's ability to earn
+        > the grant pool. An authority server’s ability to earn
         > efficiency support is capped at 50%. An authority server can
         > earn efficiency up to a maximum of 50% of the maximum tokens
         > budgeted for an authority server.
@@ -848,7 +887,7 @@ Standing Parties
 Delegation
 ----------
 
-> Delegation allows parties that don't have too much influence to lend
+> Delegation allows parties that don’t have too much influence to lend
 > their influence to parties that can spend more time thinking and
 > researching issues regarding the protocol.
 >
@@ -861,7 +900,7 @@ Delegation
 
 ### Delegation Process
 
-> An individual's standing is defined by their digital identity and
+> An individual’s standing is defined by their digital identity and
 > entries on that digital identity that provide cryptographic proof of
 > stake, Entry Credit purchases, Efficiency, etc.
 >
@@ -886,14 +925,15 @@ Delegation
 > The purpose is to make individual support more powerful than the same
 > Standing Parties would be if they delegated their support.
 
-7.  Amendments and additional community documents
+1.  Amendments and additional community documents
     =============================================
 
     1.  This Factom Governance Doc 001 is a living document that will
         > need to be amended on a regular basis. Amending it shall only
-        > be executed in accordance with the process described in [[Doc
-        > 002 - Administration of Governance- and community
-        > documents]{.underline}](https://factomize.com/forums/documents/doc-002-administration-of-governance-and-community-documents.47/).
+        > be executed in accordance with the process described in [<span
+        > class="underline">Doc 002 - Administration of Governance- and
+        > community
+        > documents</span>](https://factomize.com/forums/documents/doc-002-administration-of-governance-and-community-documents.47/).
 
     2.  Additional Factom governance and community documents shall be
         > created and administered in accordance with the procedures set

@@ -6,40 +6,56 @@
 
 **DOC 006**
 
-+----------------+----------------+----------------+----------------+
-| Document       |                |                |                |
-| control        |                |                |                |
-| matrix\*       |                |                |                |
-+================+================+================+================+
-| **ENT          | **PART OF      | **APPROVAL     | **APPROVAL     |
-| ITY/ENTITIES** | DOCUMENT**     | TYPE**         | AUTHORITY FOR  |
-|                |                |                | THIS           |
-|                |                |                | DOCUMENT**     |
-+----------------+----------------+----------------+----------------+
-| ANOs and       | No highlight   | ⅘ Guide        | Yes            |
-| Guides\*\*     |                | approval       |                |
-|                |                |                |                |
-|                |                | ⅗ ANO approval |                |
-+----------------+----------------+----------------+----------------+
-| Factom         | Text/tables    | ⅘ Guide        | No             |
-| Guides\*\*     | highlighted:   | approval       |                |
-|                | N/A            |                |                |
-+----------------+----------------+----------------+----------------+
-| Not applicable | Not applicable | Single entity  | No             |
-|                |                | approval       |                |
-+----------------+----------------+----------------+----------------+
+<table>
+<thead>
+<tr class="header">
+<th>Document control matrix*</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ENTITY/ENTITIES</strong></td>
+<td><strong>PART OF DOCUMENT</strong></td>
+<td><strong>APPROVAL TYPE</strong></td>
+<td><strong>APPROVAL AUTHORITY FOR THIS DOCUMENT</strong></td>
+</tr>
+<tr class="even">
+<td>ANOs and Guides**</td>
+<td>No highlight</td>
+<td><p>⅘ Guide approval</p>
+<p>⅗ ANO approval</p></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Factom Guides**</td>
+<td>Text/tables highlighted: N/A</td>
+<td>⅘ Guide approval</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Not applicable</td>
+<td>Not applicable</td>
+<td>Single entity approval</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
-> \* See [[Doc 002 - Administration of governance- and community
-> documents]{.underline}](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
+> \* See [<span class="underline">Doc 002 - Administration of
+> governance- and community
+> documents</span>](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
 > Chapter 3.
 >
-> \*\* See [[Doc 001 - *Factom
-> Governance*]{.underline}](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
+> \*\* See [<span class="underline">Doc 001 - *Factom
+> Governance*</span>](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
 > Definitions.
 
-  VERSION   DRAFT DATE   DRAFT BY            CHANGES                                               APPROVED BY        APPROVED DATE
-  --------- ------------ ------------------- ----------------------------------------------------- ------------------ ---------------
-  1.0       2019-11-05   The Factom Guides   Document as ratified by the Factom Standing Parties   Standing parties   2019-11-13
+| VERSION | DRAFT DATE | DRAFT BY          | CHANGES                                             | APPROVED BY      | APPROVED DATE |
+|---------|------------|-------------------|-----------------------------------------------------|------------------|---------------|
+| 1.0     | 2019-11-05 | The Factom Guides | Document as ratified by the Factom Standing Parties | Standing parties | 2019-11-13    |
 
  
 
@@ -71,8 +87,9 @@
 
         5.  Working groups have no formal role in governance.
 
-        6.  [[Doc 209 (Factom Working Groups]{.underline} [&
-            > Committees)]{.underline}](https://docs.google.com/document/d/114zsEo2JNyVaT2diW_DYHxSSVHIL6Ql3wkR4VfWeg7U/edit?usp=sharing)
+        6.  [<span class="underline">Doc 209 (Factom Working
+            > Groups</span> <span class="underline">&
+            > Committees)</span>](https://docs.google.com/document/d/114zsEo2JNyVaT2diW_DYHxSSVHIL6Ql3wkR4VfWeg7U/edit?usp=sharing)
             > shall be updated by the Factom Guides whenever new working
             > groups and committees are formed or disbanded or whenever
             > a chairman is elected or removed.
@@ -83,10 +100,11 @@
         1.  When work within the Protocol is required towards a specific
             > end, the discussion around forming a working group can
             > ensue. Formal discussion surrounding working group
-            > formation should occur on the [[Factom protocol
-            > forum]{.underline}](https://factomize.com/forums/) under
-            > the section [[Committees and Working
-            > Groups]{.underline}](https://factomize.com/forums/factom/committees-and-working-groups.17/).
+            > formation should occur on the [<span
+            > class="underline">Factom protocol
+            > forum</span>](https://factomize.com/forums/) under the
+            > section [<span class="underline">Committees and Working
+            > Groups</span>](https://factomize.com/forums/factom/committees-and-working-groups.17/).
             > Community members interested in forming a working group
             > should post a new thread in this area to discuss the
             > possibility of forming the working group with the
@@ -100,7 +118,7 @@
             > valuable, and specific goal), then the will of the
             > community, both via written support in the created thread
             > and/or by expressing interest in actively participating in
-            > the working group, can lead to the working group\'s
+            > the working group, can lead to the working group's
             > formation.
 
         3.  Individuals interested in joining the working group should
@@ -121,7 +139,7 @@
         6.  Discussion surrounding working group formation, subsequent
             > updates, and/or disbandment of working groups are posted
             > in the aforementioned Factom Protocol subforum, thereby
-            > "Factomizing" all public input and dialogue that occurs
+            > “Factomizing” all public input and dialogue that occurs
             > surrounding working group matters.
 
     3.  Working Group Governance
@@ -155,8 +173,8 @@
             > Standing Parties. It is a body of persons delegated to
             > consider, investigate, take action on, or report on
             > matters. Current and previous committees are available in
-            > [[Doc
-            > 209]{.underline}](https://docs.google.com/document/d/114zsEo2JNyVaT2diW_DYHxSSVHIL6Ql3wkR4VfWeg7U/edit?usp=sharing).
+            > [<span class="underline">Doc
+            > 209</span>](https://docs.google.com/document/d/114zsEo2JNyVaT2diW_DYHxSSVHIL6Ql3wkR4VfWeg7U/edit?usp=sharing).
 
         2.  Because committees are comprised of multiple individuals
             > and/or members within multiple organizations/companies, it
@@ -167,8 +185,8 @@
         3.  Committees have a more formal role in Factom governance and
             > follow formal protocols set out in this document. They are
             > recognized by the Standing Parties and once formed are
-            > specifically named in [[Doc
-            > 209]{.underline}](https://docs.google.com/document/d/114zsEo2JNyVaT2diW_DYHxSSVHIL6Ql3wkR4VfWeg7U/edit?usp=sharing).
+            > specifically named in [<span class="underline">Doc
+            > 209</span>](https://docs.google.com/document/d/114zsEo2JNyVaT2diW_DYHxSSVHIL6Ql3wkR4VfWeg7U/edit?usp=sharing).
 
         4.  Committees represent the will of the community as they must
             > be formed via the ANO and Guide vote procedures described
@@ -199,7 +217,7 @@
             > goal), then the community, via verbal support in the
             > created thread and/or by expressing interest in actively
             > wanting to participate in the committee, can lead to the
-            > committee's formation vote.
+            > committee’s formation vote.
 
         2.  There shall be a minimum of eight (8) days of open
             > discussion regarding the committee formation to give
@@ -233,13 +251,14 @@
         8.  A committee that has been formed can create their own
             > criteria and/or process for joining the committee, as long
             > as these are publicly documented in a thread on the Factom
-            > Protocol subforum under [[Committees and Working
-            > Groups.]{.underline}](https://factomize.com/forums/factom/committees-and-working-groups.17/)
+            > Protocol subforum under [<span
+            > class="underline">Committees and Working
+            > Groups.</span>](https://factomize.com/forums/factom/committees-and-working-groups.17/)
 
         9.  The committee has to publicize at least the following
             > publicly available information in a Factomized document,
-            > that can be referenced from [[Doc
-            > 209]{.underline}](https://docs.google.com/document/d/114zsEo2JNyVaT2diW_DYHxSSVHIL6Ql3wkR4VfWeg7U/edit?usp=sharing).
+            > that can be referenced from [<span class="underline">Doc
+            > 209</span>](https://docs.google.com/document/d/114zsEo2JNyVaT2diW_DYHxSSVHIL6Ql3wkR4VfWeg7U/edit?usp=sharing).
 
             1.  The name of the committee
 
@@ -267,7 +286,7 @@
         10. Discussion surrounding committee formation, subsequent
             > updates, and/or disbandment of committees are posted in
             > the aforementioned Factom protocol subforum, thereby
-            > "Factomizing" all public input and dialogue that occurs
+            > “Factomizing” all public input and dialogue that occurs
             > surrounding committee matters.
 
     3.  Appointing a Committee Chairman

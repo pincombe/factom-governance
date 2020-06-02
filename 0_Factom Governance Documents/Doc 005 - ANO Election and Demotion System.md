@@ -6,66 +6,82 @@
 
 **DOC 005**
 
-+----------------+----------------+----------------+----------------+
-| Document       |                |                |                |
-| control        |                |                |                |
-| matrix\*       |                |                |                |
-+================+================+================+================+
-| **ENT          | **PART OF      | **APPROVAL     | **APPROVAL     |
-| ITY/ENTITIES** | DOCUMENT**     | TYPE**         | AUTHORITY FOR  |
-|                |                |                | THIS           |
-|                |                |                | DOCUMENT**     |
-+----------------+----------------+----------------+----------------+
-| Standing       | No highlight   | ⅘ guide        | Yes            |
-| parties\*\*    |                | approval       |                |
-|                |                |                |                |
-|                |                | ⅗ ANO approval |                |
-+----------------+----------------+----------------+----------------+
-| Factom         | Text/tables    | ⅘ Guide        | No             |
-| Guides\*\*     | highlighted:   | approval       |                |
-|                | N/A            |                |                |
-+----------------+----------------+----------------+----------------+
-| Not applicable | Not applicable | Single entity  | No             |
-|                |                | approval       |                |
-+----------------+----------------+----------------+----------------+
+<table>
+<thead>
+<tr class="header">
+<th>Document control matrix*</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ENTITY/ENTITIES</strong></td>
+<td><strong>PART OF DOCUMENT</strong></td>
+<td><strong>APPROVAL TYPE</strong></td>
+<td><strong>APPROVAL AUTHORITY FOR THIS DOCUMENT</strong></td>
+</tr>
+<tr class="even">
+<td>Standing parties**</td>
+<td>No highlight</td>
+<td><p>⅘ guide approval</p>
+<p>⅗ ANO approval</p></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Factom Guides**</td>
+<td>Text/tables highlighted: N/A</td>
+<td>⅘ Guide approval</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Not applicable</td>
+<td>Not applicable</td>
+<td>Single entity approval</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 
-> \* See [[Doc 002 - Administration of governance- and community
-> documents]{.underline}](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
+> \* See [<span class="underline">Doc 002 - Administration of
+> governance- and community
+> documents</span>](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
 > Chapter 3.
 >
-> \*\* See [[Doc 001 - *Factom
-> Governance*]{.underline}](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
+> \*\* See [<span class="underline">Doc 001 - *Factom
+> Governance*</span>](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
 > Definitions.
 
-  VERSION   DRAFT DATE   DRAFT BY                                        CHANGES                                                                                                    APPROVED BY               APPROVED DATE
-  --------- ------------ ----------------------------------------------- ---------------------------------------------------------------------------------------------------------- ------------------------- ---------------
-  1.0       2019-09-13   Centis BV, Factomize LLC, The 42nd Factoid AS   Document as presented to standing parties for ratification                                                 Factom Standing Parties   2019-09-21
-  1.1       2020-03-07   Canonical Ledgers                               Remove ambiguity in what happens to support-votes when a Standing Party is removed, replaced or resigns.   Factom Standing Parties   2020-03-21
+| VERSION | DRAFT DATE | DRAFT BY                                      | CHANGES                                                                                                  | APPROVED BY             | APPROVED DATE |
+|---------|------------|-----------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------|---------------|
+| 1.0     | 2019-09-13 | Centis BV, Factomize LLC, The 42nd Factoid AS | Document as presented to standing parties for ratification                                               | Factom Standing Parties | 2019-09-21    |
+| 1.1     | 2020-03-07 | Canonical Ledgers                             | Remove ambiguity in what happens to support-votes when a Standing Party is removed, replaced or resigns. | Factom Standing Parties | 2020-03-21    |
 
 1.  Introduction and Terms
     ======================
 
     1.  This document provides the procedure to elect new, continue to
-        > support, or demote Factom Authority Node Operators ("ANOs,"
-        > and individually, "ANO"). It is created to supplement and
+        > support, or demote Factom Authority Node Operators (“ANOs,”
+        > and individually, “ANO”). It is created to supplement and
         > facilitate the election and removal of ANOs as set forth in
-        > the [[Factom Governance Doc
+        > the <span class="underline">[Factom Governance Doc
         > 001](https://factomize.com/forums/documents/doc-001-factom-governance.9/)
-        > ("Doc 001")]{.underline} section 3. All capitalized terms used
+        > (“Doc 001”)</span> section 3. All capitalized terms used
         > herein and not otherwise defined in this document shall have
         > the meanings ascribed to them in Doc 001.
 
     2.  Objective measures will be designed and approved by Standing
         > Parties and then implemented via an amendment to Doc 001
-        > (\"Factom Governance Document\"). When implemented, they will
+        > ("Factom Governance Document"). When implemented, they will
         > account for a percentage of ANO standing.
 
 > Note: The system described and implemented via this document is not
 > contingent on objective criteria being added.
 
-3.  **Terms:**
+1.  **Terms:**
 
-> **Standing** - An ANO or candidate ANO's amount of support from
+> **Standing** - An ANO or candidate ANO’s amount of support from
 > Standing Parties, calculated as a percentage in the following manner:
 > ***support-votes** / \[number of\] **standing parties** \* **100***.
 >
@@ -80,14 +96,14 @@
 > Standing Parties use to provide or remove support from ANOs and
 > Candidate ANOs.
 
-2.  Process Overview
+1.  Process Overview
     ================
 
     1.  The protocol forum will host a public ANO Standing Dashboard
         > that is permanently visible to all parties and displaying
         > real-time Standing levels (in percentages, ranked from top to
         > bottom). The system will start with all Standing Parties with
-        > "Blank Vote" but will be expected to make that vote within two
+        > “Blank Vote” but will be expected to make that vote within two
         > months. Nobody will enter a 90 day notice period until all
         > Standing Parties have cast all their initial votes or those
         > two months are up, whichever is first.
@@ -101,14 +117,14 @@
 
     3.  To ensure that any ANOs that drop below 40% Standing have their
         > Standing reevaluated by all Standing Parties before the 90 day
-        > \"on notice\" period has concluded, Standing Parties are
+        > "on notice" period has concluded, Standing Parties are
         > expected to update their support-votes at a minimum cadence of
         > every 60 days. Standing parties can of course update their
         > support-votes for Standing for ANOs at any time.
 
     4.  All current ANOs will automatically be listed on the election
-        > dashboard where Standing Parties can choose to "Support" or
-        > "Not Support" based upon the contributions of the ANO. These
+        > dashboard where Standing Parties can choose to “Support” or
+        > “Not Support” based upon the contributions of the ANO. These
         > votes can be changed as many times as the Standing Party
         > wants. A means to comment and answer questions will be built
         > into the system.
@@ -144,11 +160,11 @@
 > Election and Demotion system shall be updated as soon as possible to
 > reflect the changes.
 
-9.  Vacant ANO positions (either through ANO removal or addition of
+1.  Vacant ANO positions (either through ANO removal or addition of
     > additional ANO positions) will be filled by ANO Candidates with
     > 60% or greater Standing in an order from highest to lowest.
 
-10. A new Candidate ANO that has put in an application will be displayed
+2.  A new Candidate ANO that has put in an application will be displayed
     > on the ANO support dashboard for 6 months to ensure a fair
     > exposure to Standing Parties. Candidate ANOs will be shown along
     > with the current Authority Set and the Standing Parties will be
@@ -157,19 +173,19 @@
     > Standing after the 6 months, they will be removed from the ANO
     > Standing Dashboard.
 
-11. If no ANO positions are added by Guides or opened up as a result of
+3.  If no ANO positions are added by Guides or opened up as a result of
     > current ANOs being demoted, no new ANOs will be promoted from the
     > Candidate ANOs. Candidate ANOs can automatically be promoted
     > directly to ANO status by obtaining 90% support of the Standing
     > Parties even if an ANO spot has not become available through ANO
     > demotion or by Guides making more ANO slots available. In such an
     > event the ANO position is automatically created, and the number of
-    > ANO's is increased by one.
+    > ANO’s is increased by one.
 
-> Note: This does not apply if there are 32 ANO's or more currently in
+> Note: This does not apply if there are 32 ANO’s or more currently in
 > the Authority Set.
 
-12. In a situation where the ANO Election and Demotion System becomes
+1.  In a situation where the ANO Election and Demotion System becomes
     > unavailable for any reason, automatic elections and demotions are
     > suspended. If a current ANO has less than 40% support when the
     > system becomes unavailable, and the system is not restored when
@@ -177,15 +193,14 @@
     > shall organize a binary support poll for the ANO in question to
     > determine if it shall be demoted or not.
 
-13. When any Standing Party resigns, is removed, or is replaced, all
+2.  When any Standing Party resigns, is removed, or is replaced, all
     > support-votes provided by that standing party are removed, and the
     > number of standing parties is updated to count only active
     > standing parties.
 
-```{=html}
 <!-- -->
-```
-3.  Candidate ANO Process
+
+1.  Candidate ANO Process
     =====================
 
     1.  A Candidate may apply to become an ANO at any time to begin
@@ -194,41 +209,42 @@
     2.  A Candidate applies to become a Factom Authority Node Operator
         > by:
 
-        1.  Reviewing the [[technical specifications
-            > sheet]{.underline}](https://docs.google.com/document/d/1MF2E9G_hZ3bD0EwKlbsTNvaHMcHqJkLAIfYJb-AGJfg/edit?usp=sharing)
+        1.  Reviewing the [<span class="underline">technical
+            > specifications
+            > sheet</span>](https://docs.google.com/document/d/1MF2E9G_hZ3bD0EwKlbsTNvaHMcHqJkLAIfYJb-AGJfg/edit?usp=sharing)
             > to help determine server specifications.
 
-        2.  Joining the [[Factom Community
-            > Testnet]{.underline}](https://docs.factomprotocol.org/start/factom-community-testnet)
+        2.  Joining the [<span class="underline">Factom Community
+            > Testnet</span>](https://docs.factomprotocol.org/start/factom-community-testnet)
             > authority set.
 
 > Note: The Testnet has its own minimum technical specifications
 > described in the above link and does not have to mimic the mainnet
 > servers described in the application.
 
-3.  [[Joining the community discussion
-    > forum]{.underline}](https://factomize.com/forums/).
+1.  [<span class="underline">Joining the community discussion
+    > forum</span>](https://factomize.com/forums/).
 
-4.  Completing and submitting the application form [[located
-    > here]{.underline}](https://factomize.com/forums/apply).
+2.  Completing and submitting the application form [<span
+    > class="underline">located
+    > here</span>](https://factomize.com/forums/apply).
 
-5.  Answering any questions the community has on the community forum.
+3.  Answering any questions the community has on the community forum.
 
-6.  Working to build its Standing to 60% or higher so it is eligible to
+4.  Working to build its Standing to 60% or higher so it is eligible to
     > be added to the Authority Set when a position opens up.
 
-```{=html}
 <!-- -->
-```
-3.  The information required to be submitted and questions to be
-    > answered during the application are available
-    > [[here]{.underline}](https://docs.google.com/document/d/1XBkp0juMiNnrWDfuXQTzcqtVEaSCNqoSRq_F_50EXuw/edit?usp=sharing).
+
+1.  The information required to be submitted and questions to be
+    > answered during the application are available [<span
+    > class="underline">here</span>](https://docs.google.com/document/d/1XBkp0juMiNnrWDfuXQTzcqtVEaSCNqoSRq_F_50EXuw/edit?usp=sharing).
 
 > Note: The required information and questions to be asked shall
 > initially be approved, and only subsequently changed by a ⅗ Guide
 > vote.
 
-4.  ANO Promotion / Demotion Process
+1.  ANO Promotion / Demotion Process
     ================================
 
     1.  Promotions and demotions will happen on a continuing basis.
@@ -253,8 +269,8 @@
         > of and in coordination with the Core Committee.
 
     6.  A promoted ANO is expected to have successfully completed the
-        > procedure described in [[Doc
-        > 204]{.underline}](https://docs.google.com/document/d/1eYf_62ctbcDlc_9AAmCqt2FHR8s60VMr7HGxniAoPc0/edit?usp=sharing)
+        > procedure described in [<span class="underline">Doc
+        > 204</span>](https://docs.google.com/document/d/1eYf_62ctbcDlc_9AAmCqt2FHR8s60VMr7HGxniAoPc0/edit?usp=sharing)
         > within 28 days of being promoted to ANO status.
 
     7.  The promoted ANO will be allowed to operate authority servers as
@@ -271,14 +287,15 @@
         > Set within 7 days after the promoted ANO has notified them
         > that the procedure described in Doc 204 is complete.
 
-    9.  A promoted ANO is expected to adhere to [[Doc
-        > 003]{.underline}](https://docs.google.com/document/d/1IylZOUbY5D3_qbRDDOHSFPIKoVav15h8ojTESpQP3Y0/edit?usp=sharing)
+    9.  A promoted ANO is expected to adhere to [<span
+        > class="underline">Doc
+        > 003</span>](https://docs.google.com/document/d/1IylZOUbY5D3_qbRDDOHSFPIKoVav15h8ojTESpQP3Y0/edit?usp=sharing)
         > (ANO expectations) from the time their identities are included
         > in the Authority Set.
 
-    10. As soon as practical, [[Doc
-        > 207]{.underline}](https://docs.google.com/document/d/1UL1-8EG7-k6wKJN9DNYaShk9-ZWYxAW1IUHCPHv-4to/edit?usp=sharing)
-        > and [[Doc
-        > 208]{.underline}](https://docs.google.com/spreadsheets/d/1fopTNg7ZnokwybEwC6H7W3vEAmNMkyFd_3xumDj5q0Q/edit?usp=sharing)
+    10. As soon as practical, [<span class="underline">Doc
+        > 207</span>](https://docs.google.com/document/d/1UL1-8EG7-k6wKJN9DNYaShk9-ZWYxAW1IUHCPHv-4to/edit?usp=sharing)
+        > and [<span class="underline">Doc
+        > 208</span>](https://docs.google.com/spreadsheets/d/1fopTNg7ZnokwybEwC6H7W3vEAmNMkyFd_3xumDj5q0Q/edit?usp=sharing)
         > shall be updated by the Factom Protocol Guides with the
         > changes to the ANO composition and digital identities

@@ -50,51 +50,67 @@ requirements](#appendix-7---factom-testnet-administrator-candidate-requirements)
 Process](#appendix-8---testnet-administrator-election-and-removal-process)
 20
 
-+----------------+----------------+----------------+----------------+
-| Document       |                |                |                |
-| control        |                |                |                |
-| matrix\*       |                |                |                |
-+================+================+================+================+
-| **ENT          | **PART OF      | **APPROVAL     | **APPROVAL     |
-| ITY/ENTITIES** | DOCUMENT**     | TYPE**         | AUTHORITY FOR  |
-|                |                |                | THIS           |
-|                |                |                | DOCUMENT**     |
-+----------------+----------------+----------------+----------------+
-| Standing       | No highlight   | ⅘ guide        | Yes            |
-| parties\*\*    |                | approval       |                |
-|                |                |                |                |
-|                |                | ⅗ ANO approval |                |
-+----------------+----------------+----------------+----------------+
-| Factom         | Text/tables    | ⅘ Guide        | No             |
-| Guides\*\*     | highlighted:   | approval       |                |
-|                | N/A            |                |                |
-+----------------+----------------+----------------+----------------+
-| Testnet        | Appendices 1-7 | Single entity  | Yes            |
-| Administrator  |                | approval       |                |
-+----------------+----------------+----------------+----------------+
+<table>
+<thead>
+<tr class="header">
+<th>Document control matrix*</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ENTITY/ENTITIES</strong></td>
+<td><strong>PART OF DOCUMENT</strong></td>
+<td><strong>APPROVAL TYPE</strong></td>
+<td><strong>APPROVAL AUTHORITY FOR THIS DOCUMENT</strong></td>
+</tr>
+<tr class="even">
+<td>Standing parties**</td>
+<td>No highlight</td>
+<td><p>⅘ guide approval</p>
+<p>⅗ ANO approval</p></td>
+<td>Yes</td>
+</tr>
+<tr class="odd">
+<td>Factom Guides**</td>
+<td>Text/tables highlighted: N/A</td>
+<td>⅘ Guide approval</td>
+<td>No</td>
+</tr>
+<tr class="even">
+<td>Testnet Administrator</td>
+<td>Appendices 1-7</td>
+<td>Single entity approval</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 
-> \* See [[Doc 002 - Administration of governance- and community
-> documents]{.underline}](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
+> \* See [<span class="underline">Doc 002 - Administration of
+> governance- and community
+> documents</span>](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
 > Chapter 3.
 >
-> \*\* See [[Doc 001 - *Factom
-> Governance*]{.underline}](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
+> \*\* See [<span class="underline">Doc 001 - *Factom
+> Governance*</span>](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
 > Definitions.
 
-  VERSION   DRAFT DATE   DRAFT BY                          CHANGES                                                               APPROVED BY               APPROVED DATE
-  --------- ------------ --------------------------------- --------------------------------------------------------------------- ------------------------- ---------------
-  1.0       2019-08-26   Testnet Working Group/Cube3 LLC   First version                                                         Factom Standing Parties   2019-11-15
-  1.1       2019-12-19   The 42nd Factoid AS               Amending Appendix 8 to include Guides voting in TA election/removal   Factom Standing Parties   2020-01-03
+| VERSION | DRAFT DATE | DRAFT BY                        | CHANGES                                                             | APPROVED BY             | APPROVED DATE |
+|---------|------------|---------------------------------|---------------------------------------------------------------------|-------------------------|---------------|
+| 1.0     | 2019-08-26 | Testnet Working Group/Cube3 LLC | First version                                                       | Factom Standing Parties | 2019-11-15    |
+| 1.1     | 2019-12-19 | The 42nd Factoid AS             | Amending Appendix 8 to include Guides voting in TA election/removal | Factom Standing Parties | 2020-01-03    |
 
 Definitions
 ===========
 
-The definitions used in this document are those made in [[Factom
-Governance Document (Doc
-001)]{.underline}](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing)
+The definitions used in this document are those made in [<span
+class="underline">Factom Governance Document (Doc
+001)</span>](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing)
 except where expressly stated otherwise.
 
-2.  Introduction
+1.  Introduction
     ============
 
     1.  The Factom protocol needs to continue to evolve and develop but
@@ -114,7 +130,7 @@ except where expressly stated otherwise.
         > this Doc any reference to Testnet includes the individual
         > testnets.
 
-    4.  Running a Testnet is not easy or straightforward and Factom\'s
+    4.  Running a Testnet is not easy or straightforward and Factom's
         > experience of doing this is that it is appreciated as a test
         > bed for new code and as a learning ground for new ANOs but is
         > underutilized, because of things like low specification nodes,
@@ -135,7 +151,7 @@ except where expressly stated otherwise.
         > to maintain the Testnet and the dependence on people playing
         > their roles.
 
-3.  Purpose and scope of this governance document
+2.  Purpose and scope of this governance document
     =============================================
 
     1.  Purpose
@@ -161,10 +177,9 @@ except where expressly stated otherwise.
 
     4.  Evaluation of potential ANOs.
 
-```{=html}
 <!-- -->
-```
-2.  Scope
+
+1.  Scope
 
 > This document defines the purpose and value of the Factom Testnet. It
 > describes how the Testnet will be governed in the context of the
@@ -172,7 +187,7 @@ except where expressly stated otherwise.
 > those involved in operating and governing the Factom Testnet are
 > specified.
 
-4.  Purpose and value of the Factom Testnet
+1.  Purpose and value of the Factom Testnet
     =======================================
 
     1.  The basic purpose is to:
@@ -186,7 +201,7 @@ except where expressly stated otherwise.
 
         4.  Enable new ecosystem participants to practice running
             > server(s) in a safe test environment and experiment with
-            > operations such as "brain swaps"
+            > operations such as “brain swaps”
 
         5.  Approximate the Factom Mainnet so that all facets of Mainnet
             > operations can be tested and experimented with
@@ -204,7 +219,7 @@ except where expressly stated otherwise.
         4.  Test the factomd codebase to uncover bugs.
 
         5.  Coach people in a safe, supportive environment, and provide
-            > the standing parties a means to assess an applicant\'s
+            > the standing parties a means to assess an applicant's
             > ability to reliably run an authority server, thus ensuring
             > basic competence before actually operating on the Factom
             > Mainnet.
@@ -218,7 +233,7 @@ except where expressly stated otherwise.
         8.  Ensure consistent acceptance criteria for anything moving to
             > Mainnet in conjunction with the Core Code Committee.
 
-5.  Governance model for the Factom Testnet
+2.  Governance model for the Factom Testnet
     =======================================
 
     1.  Testnet governance relates to Mainnet governance and any other
@@ -297,7 +312,7 @@ except where expressly stated otherwise.
                 5.  Links to Factomized records of overall performance
                     > and individual tests/results
 
-6.  Roles and Responsibilities
+3.  Roles and Responsibilities
     ==========================
 
 > **Testnet Administrator**
@@ -338,7 +353,7 @@ except where expressly stated otherwise.
 
 **Testnet authority node operators**
 
-3.  Eligibility to run a Testnet node
+1.  Eligibility to run a Testnet node
 
     1.  Any ANO may apply to run a number of Testnet authority nodes
 
@@ -354,7 +369,7 @@ except where expressly stated otherwise.
     5.  Appeals against judgements by the Testnet Administrator will be
         > heard by the standing parties.
 
-4.  Costs and Rewards for running a Testnet Authority Node
+2.  Costs and Rewards for running a Testnet Authority Node
 
     1.  All costs for running a Testnet Node are borne by the operator
         > and are not reimbursable.
@@ -363,7 +378,7 @@ except where expressly stated otherwise.
         > Running a Testnet Node is considered a gesture of support for
         > the Protocol, which may contribute to ANO standing.
 
-5.  Responsibility of Testnet participants
+3.  Responsibility of Testnet participants
 
     1.  Testnet participants are required to:
 
@@ -374,14 +389,16 @@ except where expressly stated otherwise.
             > specification in Appendix 3)
 
         3.  Record the number of Testnet nodes being operated on this
-            > Google Sheet [[Google Sheet showing Testnet
-            > nodes]{.underline}](https://docs.google.com/spreadsheets/d/1tXXIQM7FYAAJ0hCiUZJQIu9G4F8AAm0IOcyRTM8yJjw/edit?usp=sharing)
+            > Google Sheet [<span class="underline">Google Sheet showing
+            > Testnet
+            > nodes</span>](https://docs.google.com/spreadsheets/d/1tXXIQM7FYAAJ0hCiUZJQIu9G4F8AAm0IOcyRTM8yJjw/edit?usp=sharing)
             > tab Current Authority Identities illustrated in Appendix 4
 
         4.  Maintain each node by updating Factomd as directed by the
-            > Testnet Administrator, (Recording this on the [[Google
-            > Sheet for recording Factomd testnet updates by
-            > node]{.underline}](https://docs.google.com/spreadsheets/d/1tXXIQM7FYAAJ0hCiUZJQIu9G4F8AAm0IOcyRTM8yJjw/edit?usp=sharing)
+            > Testnet Administrator, (Recording this on the [<span
+            > class="underline">Google Sheet for recording Factomd
+            > testnet updates by
+            > node</span>](https://docs.google.com/spreadsheets/d/1tXXIQM7FYAAJ0hCiUZJQIu9G4F8AAm0IOcyRTM8yJjw/edit?usp=sharing)
             > tab Authority Set Updates illustrated in Appendix 5)
 
         5.  Be proactive in operating their node(s) including responding
@@ -391,7 +408,7 @@ except where expressly stated otherwise.
         6.  Participate actively in the Discord Community Testnet
             > channel(s)
 
-6.  Consequences of not running a Testnet node in line with the
+4.  Consequences of not running a Testnet node in line with the
     > guidelines
 
     1.  In the event of a Testnet node operator not running a node in
@@ -411,10 +428,9 @@ except where expressly stated otherwise.
         > Testnet participant can appeal only after full and proper
         > dialogue with the Testnet Administrator.
 
-```{=html}
 <!-- -->
-```
-7.  Standing of Role Holders
+
+1.  Standing of Role Holders
     ========================
 
     1.  Standing in the community is defined by Doc 001. This makes no
@@ -425,7 +441,7 @@ except where expressly stated otherwise.
         > of Guides and Committees; they are accountable only to the
         > full Standing Parties.
 
-8.  Election and removal of Testnet Administrator
+2.  Election and removal of Testnet Administrator
     =============================================
 
     1.  It is anticipated that a Factom Testnet Administrator would
@@ -443,7 +459,7 @@ except where expressly stated otherwise.
     5.  The Factom Testnet Administrator can be removed in line with the
         > process described in Appendix 8.
 
-9.  Funding of Testnet
+3.  Funding of Testnet
     ==================
 
     1.  If a Testnet budget is required the Testnet Administrator will
@@ -540,10 +556,10 @@ If other please specify here
 
 If currently running other test net nodes please state which nodes
 
-Description of the applicant entity\'s experience of server
+Description of the applicant entity's experience of server
 administration
 
-Combined length of entity\'s server administration experience
+Combined length of entity's server administration experience
 
 Technical specification of server
 
@@ -602,7 +618,7 @@ Up time measured in weeks and months, not days.
 Appendix 4 - Record of testnet nodes by operator
 ================================================
 
-![](.//media/image2.png){width="5.8125in" height="4.208333333333333in"}
+<img src=".//media/image2.png" style="width:5.8125in;height:4.20833in" />
 
  
 
@@ -680,7 +696,7 @@ Appendix 8 - Testnet Administrator Election and Removal Process
         3.  Upon commencement of a Testnet Administrator election, the
             > following process will be followed.
 
-        4.  A temporary "Testnet Administrator Candidates" subforum will
+        4.  A temporary “Testnet Administrator Candidates” subforum will
             > be created on the community forum.
 
         5.  The current Guides will create a post in the community
@@ -758,15 +774,15 @@ Appendix 8 - Testnet Administrator Election and Removal Process
             > followed.
 
         3.  The Testnet Administrator subject to the removal process is
-            > hereinafter referred to as the "Subject Testnet
-            > Administrator".
+            > hereinafter referred to as the “Subject Testnet
+            > Administrator”.
 
         4.  The removal process shall be commenced by an ANO or Guide
             > representing at least 10% of all the ANOs and Guides by
-            > making a motion through a "Timed Thread" set as a "Major
-            > Discussion", named "REMOVAL: \[Subject Testnet
-            > Administrator's Name\]," in the Governance Discussion
-            > forum at the Factom community forum (the "Removal Thread")
+            > making a motion through a “Timed Thread” set as a “Major
+            > Discussion”, named “REMOVAL: \[Subject Testnet
+            > Administrator’s Name\],” in the Governance Discussion
+            > forum at the Factom community forum (the “Removal Thread”)
             > or other platform used by the community.
 
             1.  The number of ANOs and Guides required to make a removal
@@ -777,42 +793,41 @@ Appendix 8 - Testnet Administrator Election and Removal Process
 > *Example: for 26 ANOs and Guides, 10% is 2.6 so the minimum number of
 > the ANOs and Guides to make a removal motion is three (3).*
 
-2.  The Removal Thread shall be public but can only be posted in and
+1.  The Removal Thread shall be public but can only be posted in and
     > voted on by ANOs and Guides.
 
-3.  The Timed Thread will have a poll with the subject, "Should
+2.  The Timed Thread will have a poll with the subject, “Should
     > \[Subject Testnet Administrator\] be Removed as a Testnet
-    > Administrator?" with the options of "Yes", "No" and "Abstain". The
+    > Administrator?” with the options of “Yes”, “No” and “Abstain”. The
     > poll will not begin until the timed discussion ends.
 
-4.  The initiator shall provide a link to this document, the names of
+3.  The initiator shall provide a link to this document, the names of
     > the other 10%+ ANOs and Guides supporting the removal motion, the
     > rationale behind the removal, and any supporting evidence in the
     > first post of the thread.
 
-5.  The Subject Testnet Administrator may state their case in the
+4.  The Subject Testnet Administrator may state their case in the
     > thread.
 
-6.  There shall be a minimum of eight (8) days of open discussion
+5.  There shall be a minimum of eight (8) days of open discussion
     > regarding the removal motion in order to give the Subject Testnet
     > Administrator a reasonable opportunity to answer and defend
     > themself. As such, discussion may not be ended early but may be
     > extended following the normal procedure for Major Timed
     > Discussions.
 
-7.  After the discussion phase has ended a vote will be automatically
+6.  After the discussion phase has ended a vote will be automatically
     > initiated. The voting period shall be three (3) days. The votes
     > will not be revealed until the poll closes.
 
-8.  If a simple majority (more than 50% of the ANOs and Guides) vote
+7.  If a simple majority (more than 50% of the ANOs and Guides) vote
     > yes, the motion carries and the Testnet Administrator is removed.
     > If less than 50% of the ANOs and Guides vote yes, the motion fails
     > and the Subject Testnet Administrator maintains their position.
 
-```{=html}
 <!-- -->
-```
-5.  If the removal motion passes:
+
+1.  If the removal motion passes:
 
     1.  The Subject Testnet Administrator will be immediately removed
         > from the Testnet Administrator position and their access to
@@ -823,6 +838,6 @@ Appendix 8 - Testnet Administrator Election and Removal Process
         > Guides will be posted on communication platforms for the
         > Factom Protocol.
 
-    3.  The \'Testnet Administrator Election Process\' set forth in
+    3.  The 'Testnet Administrator Election Process' set forth in
         > Section 1.1 of this document will be initiated by the Guides
         > within seventy-two (72) hours.
