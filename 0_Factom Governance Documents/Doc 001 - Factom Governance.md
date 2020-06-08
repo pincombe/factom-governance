@@ -395,8 +395,7 @@ functions they provide are automated into the protocol.
         The details of grants should adjust for workload, FCT price,
         and other factors.
 
-Authority Set
-=============
+### 3. Authority Set
 
 The Authority Set is comprised of entities (and hardware + software
 they control) to build blocks on the Factom blockchain. These entities
@@ -414,49 +413,49 @@ non-technical potential contributions to the Factom Protocol.
 Membership will be granted and revoked as a result of campaigns, and
 performance running the protocol with support of the Standing Parties.
 
-1.  Applications
+### 3.1. Applications
     ------------
 
-    1.  Applicants wishing to be authorized to run an Authority Set node
+- **3.1.1.**  Applicants wishing to be authorized to run an Authority Set node
         publish their desire to participate and document their
         qualifications by submitting an application via the Factom
         Protocol forum.
 
-2.  Campaign factors
+### 3.2.  Campaign factors
     ----------------
 
-    1.  The following are some factors that will be considered as
+- **3.2.1.**  The following are some factors that will be considered as
         indicators to begin with when deciding which entities running
         servers on the protocol to promote into the Authority Set.
 
-    2.  ### Testnet participation
+### 3.2.2. Testnet participation
 
-        1.  The applicant will demonstrate the ability to reliably run a
+- **3.2.2.1.**  The applicant will demonstrate the ability to reliably run a
             node by having run an authority server as a member of the
             Testnet Authority Set.
 
-    3.  ### Support of Protocol
+### 3.2.3. Support of Protocol
 
-        1.  Applicants commitment to the support of the Factom protocol
+- **3.2.3.1.**  Applicants commitment to the support of the Factom protocol
             will be a factor considered.
 
-        2.  An application can pledge a level of [<span
+- **3.2.3.2.**  An application can pledge a level of [<span
             class="underline">efficiency</span>](#kix.43gwl7p2gek8).
 
-    4.  ### Node technical specifications and reliability
+### 3.2.4. Node technical specifications and reliability
 
-        1.  Authority Node Operators are expected to maintain their
+- **3.2.4.1.**  Authority Node Operators are expected to maintain their
             nodes at a level that is consistent with a healthy
             network. These include but are not limited to:
 
-        2.  Plans for hot backup/brainswap servers.
+- **3.2.4.2.**  Plans for hot backup/brainswap servers.
 
-        3.  Plans for the technical capabilities and capacity of
+- **3.2.4.3.**  Plans for the technical capabilities and capacity of
             proposed nodes.
 
-        4.  Planned availability of the maintenance team.
+- **3.2.4.4.**  Planned availability of the maintenance team.
 
-    5.  ### Location
+### 3.2.5. Location
 
         1.  Having Authority nodes spread out over different
             geographies, jurisdictions, Autonomous System Numbers, and
