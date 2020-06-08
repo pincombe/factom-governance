@@ -292,18 +292,17 @@ Pretty much the same as PoS, but those with stake can delegate their
 voting power to other entities. This allows something of a more
 representative form of governance.
 
-1. Introduction
-   ============
+## 1. Introduction
 
-    1.  The following documents the governance model for the Authority
+- **1.1.**  The following documents the governance model for the Authority
         Set and the protocol.
 
-    2.  The network will be initially governed by a set of Guides
+- **1.2.**  The network will be initially governed by a set of Guides
         entrusted with promoting the best interests of the protocol
         and the community depending on the continued orderly operation
         of the protocol.
 
-    3.  The long term plan is to automate many of the objective
+- **1.3.**  The long term plan is to automate many of the objective
         components, the weighting driving decision making, and other
         aspects of protocol governance. As an interim step, the Guides
         will provide governance, allowing a period of experimentation
@@ -312,12 +311,11 @@ representative form of governance.
         governance is fundamentally a human process, it is likely that
         not all aspects can be fully automated.
 
-    4.  The Authority Set, Guides, Developers, and Community will work
+- **1.4.**  The Authority Set, Guides, Developers, and Community will work
         to develop and refine workable processes. Once agreed upon,
         these processes will be implemented into the protocol.
 
-2. Guides
-   ======
+## 2. Guides
 
 Guides are a group of entities selected by the other Standing Parties
 who are charged with maintaining orderly operation of the protocol.
@@ -327,62 +325,59 @@ entity is to be allowed to provide a majority of the guides.
 The responsibilities of the Guides will be phased out over time as the
 functions they provide are automated into the protocol.
 
-1.  Guide eligibility standards
-    ---------------------------
+### 2.1.  Guide eligibility standards
 
-    1.  Guides should demonstrate independence in thought, leadership,
+- **2.1.1.**  Guides should demonstrate independence in thought, leadership,
         and business. Two guides should not have entangled business,
         political, or social connections that might call into question
         decisions and actions that might best serve the interest of
         groups of people over the interests of the protocol.
 
-    2.  A Guide can be an individual, or group represented by an
+- **2.1.2.**  A Guide can be an individual, or group represented by an
         individual. The individual (or if a group, the group and
         representing individual) must be of good moral character with
         a demonstrated interest in the long term best interests of the
         protocol, willingness to serve the community of users, and
         history as a leader in the community.
 
-2.  Guide responsibilities
-    ----------------------
+### 2.2.  Guide responsibilities
 
-    1.  Guides will make themselves available to the community.
+- **2.2.1.**  Guides will make themselves available to the community.
 
-    2.  Guides are charged with maintaining the orderly operation of the
+- **2.2.2.**  Guides are charged with maintaining the orderly operation of the
         protocol network and facilitating the relationships between
         Standing Parties and the community.
 
-    3.  Guides will be responsible for overseeing the application of the
+- **2.2.3.**  Guides will be responsible for overseeing the application of the
         protocol governance to the operation of the protocol. To be
         fair, everyone involved are responsible for adhering to
         governance, but in practice, the Guides will be in the best
         position to provide guidance.
 
-    4.  Maintaining the orderly operation of the network includes
+- **2.2.4.**  Maintaining the orderly operation of the network includes
         ensuring an adequate number of applicants to run a large
         enough pool of servers to ensure 65 servers are always
         available for the Authority Set. The guides will be in close
         communication with the Testnet, and monitor the performance of
         members of the Testnet Authority Pool.
 
-    5.  Guides will meet at least once a week. Guide meetings do not
+- **2.2.5.**  Guides will meet at least once a week. Guide meetings do not
         have to be in person. A valid meeting has at least three of
         the five Guides, and will be public.
 
-    6.  Minutes of the weekly Guide meeting will be published on the
+- **2.2.6.**  Minutes of the weekly Guide meeting will be published on the
         protocol, including attendance.
 
-    7.  Guides will provide oversight and coordination of the grant
+- **2.2.7.**  Guides will provide oversight and coordination of the grant
         process, execution, and evaluation.
 
-    8.  Guides will document conflicts of interest in the minutes of
+- **2.2.8.**  Guides will document conflicts of interest in the minutes of
         guide meetings, and recuse themselves from decisions where
         they have a conflict of interest.
 
-3.  Guide Election and Removal
-    --------------------------
+## 3.  Guide Election and Removal
 
-    1.  The processes to elect and remove a Guide and other relevant
+- **3.1.**  The processes to elect and remove a Guide and other relevant
         terms are supplemented by [<span class="underline">Doc 100:
         Guide Election and Removal
         Processes</span>](https://factomize.com/forums/documents/doc-100-guide-election-and-removal-process.57/).
@@ -390,14 +385,13 @@ functions they provide are automated into the protocol.
         governance and community documents shall be amended to
         incorporate the on-chain election process.
 
-4.  Guide remuneration
-    ------------------
+## 4.  Guide remuneration
 
-    1.  Guides will be compensated for their time by the award of tokens
+- **4.1.**  Guides will be compensated for their time by the award of tokens
         from the Grant Pool. Each Guide position is allocated tokens
         from the grant pool by the protocol itself.
 
-    2.  Guides will be awarded via the grant process for their service.
+- **4.2.**  Guides will be awarded via the grant process for their service.
         The details of grants should adjust for workload, FCT price,
         and other factors.
 
