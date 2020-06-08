@@ -1,5 +1,14 @@
 # FACTOM GOVERNANCE DOC 001
 
+## Document control matrix
+
+| ENTITY/ENTITIES | PART OF DOCUMENT | APPROVAL TYPE | APPROVAL AUTHORITY FOR THIS DOCUMENT |
+| --- | --- | --- | --- |
+| Standing Parties** | ⅘ guide approval | ⅗ ANO approval | Yes |
+| Factom Guides** | Text/tables highlighted: ORANGE | ⅘ Guide approval | No |
+| Not applicable | Not applicable | Single entity approval | No |
+
+
 <table>
 <thead>
 <tr class="header">
