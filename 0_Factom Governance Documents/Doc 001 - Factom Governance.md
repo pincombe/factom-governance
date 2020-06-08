@@ -375,9 +375,9 @@ functions they provide are automated into the protocol.
         guide meetings, and recuse themselves from decisions where
         they have a conflict of interest.
 
-## 3.  Guide Election and Removal
+## 2.3.  Guide Election and Removal
 
-- **3.1.**  The processes to elect and remove a Guide and other relevant
+- **2.3.1.**  The processes to elect and remove a Guide and other relevant
         terms are supplemented by [<span class="underline">Doc 100:
         Guide Election and Removal
         Processes</span>](https://factomize.com/forums/documents/doc-100-guide-election-and-removal-process.57/).
@@ -385,13 +385,13 @@ functions they provide are automated into the protocol.
         governance and community documents shall be amended to
         incorporate the on-chain election process.
 
-## 4.  Guide remuneration
+## 2.4.  Guide remuneration
 
-- **4.1.**  Guides will be compensated for their time by the award of tokens
+- **2.4.1.**  Guides will be compensated for their time by the award of tokens
         from the Grant Pool. Each Guide position is allocated tokens
         from the grant pool by the protocol itself.
 
-- **4.2.**  Guides will be awarded via the grant process for their service.
+- **2.4.2.**  Guides will be awarded via the grant process for their service.
         The details of grants should adjust for workload, FCT price,
         and other factors.
 
