@@ -834,24 +834,23 @@ The following sections detail each of the possible support categories.
         earn efficiency up to a maximum of 50% of the maximum tokens
         budgeted for an authority server.
 
-6.  ### Support category: Contribution
+### 6.2.6 Support category: Contribution
 
-    1.  This is a theoretical idea, but for which we have no solution as
-        of yet.
+- **6.2.6.1**  This is a theoretical idea, but for which we have no solution as
+             of yet.
 
-    2.  We may consider mechanisms for contributing to the grant pool
-        without being an authority server. This is more complex from
-        an accounting/legal perspective.
+- **6.2.6.1**  We may consider mechanisms for contributing to the grant pool
+             without being an authority server. This is more complex from
+             an accounting/legal perspective.
 
-    3.  We may consider mechanisms for creating grant weight for direct
-        support of protocol advancements, infrastructure development,
-        conference sponsorship, protocol promotion, business
-        development, security improvements, etc. This is hard because
-        these activities are in the real world, not within the
-        protocol.
+- **6.2.6.1**  We may consider mechanisms for creating grant weight for direct
+             support of protocol advancements, infrastructure development,
+             conference sponsorship, protocol promotion, business
+             development, security improvements, etc. This is hard because
+             these activities are in the real world, not within the
+             protocol.
 
-Delegation
-----------
+## 6.3. Delegation
 
 Delegation allows parties that don’t have too much influence to lend
 their influence to parties that can spend more time thinking and
@@ -864,7 +863,7 @@ organization than they can as individuals. We see this in governments
 today with entrenched political parties. Voting outside the parties is
 considered by most as a waste of time.
 
-### Delegation Process
+### 6.3.1 Delegation Process
 
 An individual’s standing is defined by their digital identity and
 entries on that digital identity that provide cryptographic proof of
@@ -875,18 +874,18 @@ delegation record entry in the receiving Digital Identity. This entry
 includes a numbered weight of each category. The support is withdrawn
 by adding a withdrawal entry added to the receiving Digital Identity.
 
-### Delegation Penalty
+### 6.3.2 Delegation Penalty
 
 When standing is delegated, it loses some of its voting power as
 follows:
 
--   10% from an original Standing party to another.
+- 10% from an original Standing party to another.
 
--   20% from a second party to a third.
+- 20% from a second party to a third.
 
--   30% from a third to a fourth.
+- 30% from a third to a fourth.
 
--   30% on any additional delegation.
+- 30% on any additional delegation.
 
 The purpose is to make individual support more powerful than the same
 Standing Parties would be if they delegated their support.
