@@ -375,7 +375,7 @@ functions they provide are automated into the protocol.
         guide meetings, and recuse themselves from decisions where
         they have a conflict of interest.
 
-## 2.3.  Guide Election and Removal
+### 2.3.  Guide Election and Removal
 
 - **2.3.1.**  The processes to elect and remove a Guide and other relevant
         terms are supplemented by [<span class="underline">Doc 100:
@@ -385,7 +385,7 @@ functions they provide are automated into the protocol.
         governance and community documents shall be amended to
         incorporate the on-chain election process.
 
-## 2.4.  Guide remuneration
+### 2.4.  Guide remuneration
 
 - **2.4.1.**  Guides will be compensated for their time by the award of tokens
         from the Grant Pool. Each Guide position is allocated tokens
@@ -395,7 +395,7 @@ functions they provide are automated into the protocol.
         The details of grants should adjust for workload, FCT price,
         and other factors.
 
-### 3. Authority Set
+## 3. Authority Set
 
 The Authority Set is comprised of entities (and hardware + software
 they control) to build blocks on the Factom blockchain. These entities
