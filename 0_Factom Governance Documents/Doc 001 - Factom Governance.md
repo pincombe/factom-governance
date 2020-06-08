@@ -8,45 +8,6 @@
 | Factom Guides** | Text/tables highlighted: ORANGE | ⅘ Guide approval | No |
 | Not applicable | Not applicable | Single entity approval | No |
 
-
-<table>
-<thead>
-<tr class="header">
-<th>Document control matrix*</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>ENTITY/ENTITIES</strong></td>
-<td><strong>PART OF DOCUMENT</strong></td>
-<td><strong>APPROVAL TYPE</strong></td>
-<td><strong>APPROVAL AUTHORITY FOR THIS DOCUMENT</strong></td>
-</tr>
-<tr class="even">
-<td>Standing Parties**</td>
-<td>No highlight</td>
-<td><p>⅘ guide approval</p>
-<p>⅗ ANO approval</p></td>
-<td>Yes</td>
-</tr>
-<tr class="odd">
-<td>Factom Guides**</td>
-<td>Text/tables highlighted: ORANGE</td>
-<td>⅘ Guide approval</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>Not applicable</td>
-<td>Not applicable</td>
-<td>Single entity approval</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-
 > \* See [<span class="underline">Doc 002 - Administration of
 > governance- and community
 > documents</span>](https://docs.google.com/document/d/12nvQVDOoLFNtmV_jqFEeWo1Ixx3R08z4KqLNVEbDoU4/edit?usp=sharing),
@@ -56,17 +17,17 @@
 > Governance*</span>](https://docs.google.com/document/d/1RVaVR7lvfGgOBMG-7oca9TtpnR7qaEfr6XJVaZJwd3M/edit?usp=sharing),
 > Definitions.
 
-| VERSION | DRAFT DATE | DRAFT BY         | CHANGES                                                                                                                                          | APPROVED BY      | APPROVED DATE |
-|---------|------------|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------|---------------|
-| 1.0     | N/A        | Factom Community | Final document for ratification                                                                                                                  | Factom Community | 2018-04-07    |
-| 1.1     | N/A        | Factom Guides    | Version 1.1                                                                                                                                      | Factom Guides    | 2018-04-17    |
-| 1.2     | N/A        | Factom Guides    | Version 1.2                                                                                                                                      | Factom Guides    | 2018-05-04    |
-| 1.3     | N/A        | Factom Guides    | Version 1.3                                                                                                                                      | Factom Guides    | 2018-06-17    |
-| 1.4     | 2019-02-21 | Factom Guides    | Required changes to make document compatible with other community documents (Doc 100, Doc 101, Doc 002). Deleted text about guide initial roles. | Standing Parties | 2019-03-01    |
-| 1.5     | 2019-04-22 | Factom Guides    | Assorted changes to section 2, 3 and 4.                                                                                                          | Standing Parties | 2019-05-06    |
-| 1.6     | 2019-10-28 | Factom Guides    | Authority Set removal section 3.3, Support Categories section 6.2                                                                                | Standing Parties | 2019-11-13    |
+| VERSION | DRAFT DATE | DRAFT BY | CHANGES | APPROVED BY | APPROVED DATE |
+|---------|------------|----------|---------|-------------|---------------|
+| 1.0     | N/A        | Factom Community | Final document for ratification | Factom Community | 2018-04-07 |
+| 1.1     | N/A        | Factom Guides    | Version 1.1 | Factom Guides | 2018-04-17 |
+| 1.2     | N/A        | Factom Guides    | Version 1.2 | Factom Guides | 2018-05-04 |
+| 1.3     | N/A        | Factom Guides    | Version 1.3 | Factom Guides | 2018-06-17 |
+| 1.4     | 2019-02-21 | Factom Guides    | Required changes to make document compatible with other community documents (Doc 100, Doc 101, Doc 002). Deleted text about guide initial roles. | Standing Parties | 2019-03-01 |
+| 1.5     | 2019-04-22 | Factom Guides    | Assorted changes to section 2, 3 and 4. | Standing Parties | 2019-05-06 |
+| 1.6     | 2019-10-28 | Factom Guides    | Authority Set removal section 3.3, Support Categories section 6.2 | Standing Parties | 2019-11-13 |
 
-Table of Contents
+## Table of Contents
 
 [<span class="underline">Definitions</span>](#definitions)
 
@@ -192,171 +153,171 @@ documents</span>](#amendments-and-additional-community-documents)
 Definitions
 ===========
 
-> **Protocol**
->
-> Unless explicitly modified to refer to other protocols, the term
-> protocol in this document refers to the Factom protocol, which is
-> implemented in software, and run upon servers run by many independent
-> users and parties. The protocol’s definition is substantially defined
-> by the software run by the [<span class="underline">authority
-> set</span>](#kix.lres0524adra). The protocol creates an immutable
-> record of data, and distributes it over the participating nodes on the
-> network.
->
-> **Governance**
->
-> Governance is the process by which a distributed group of entities
-> design, implement, deploy, execute and promote the protocol, and the
-> ecosystem around the protocol. Much of governance centers on the
-> protocol code that in turn generates and provides incentives in the
-> form of tokens, and distributes those tokens by the rules embodied in
-> the code. The Guides aid in managing this process.
->
-> **Community**
->
-> Community in this document refers to the community of users,
-> developers, investors, traders, and organizations that have an
-> interest in building, running, promoting, and using the Factom
-> protocol, and other protocols building upon or dependent upon the
-> Factom protocol. Community is central to Factom as everyone with an
-> interest in Factom has an opportunity to play a role in maintaining,
-> developing, and promoting the Factom protocol.
->
-> **Factom Community Testnet Network**
->
-> The entirety of the Testnet Network including all operating nodes and
-> the community of users who support the Testnet Network.
->
-> **Testnet Authority Pool**
->
-> The group of Qualified Authority Nodes, including nodes currently
-> operating as part of the Authority Set of the Community Testnet.
->
-> **Federated Server**
->
-> A node that is authorized to create directory blocks and write to the
-> blockchain. The Federated servers use a consensus algorithm to agree
-> on what to include in the blocks.
->
-> **Audit Server**
->
-> The Audit Servers operate in the same manner as the Federated Servers;
-> in practice, they do the same work, but are not authorized to write to
-> the blockchain. If a federated server is removed from the federated
-> server Set, an Audit server is promoted to take its place, and the
-> Federated Server becomes an audit server.
->
-> **Authority Set**
->
-> The complete set of Federated Servers and Audit Servers. These are the
-> servers that run and serve as the backbone of the protocol.
->
-> The Factom Mainnet will include 65 servers in the Authority Set after
-> Milestone 3 (33 Federated servers and 32 Audit servers).
->
-> All Audit and Federated Servers share equally in the tokens issued by
-> the protocol.
->
-> **Authority Node Operator (ANO)**
->
-> An entity or an individual selected via governance processes to
-> operate and maintain Federated Server(s) and/or Audit Server(s).
->
-> **Digital identity**
->
-> Digital identity and digital identities in this document refer to a
-> set of chains in the protocol used to define a digital identity. In
-> some places, we simply refer to an identity, or a protocol identity.
-> In this document, all of these terms refer to Digital Identity.
-> Digital identities are central to governance, roles, voting, standing,
-> and auditing in the protocol.
->
-> **Grant Pool**
->
-> The protocol will allow the authority set to signal a higher
-> efficiency, by specifying a distribution less than the maximum
-> distribution. Tokens left over due to the efficiency of the servers
-> are placed into the grant pool within the protocol. The grant pool
-> will be used to promote the protocol, subsidize infrastructure, and
-> fund development of the protocol.
->
-> **Efficiency**
->
-> Efficiency in this document refers to how much we can reduce the cost
-> of running the protocol. To the degree we can increase efficiency
-> (reduce costs of running the protocol), we can increase the support of
-> the grant pool. As such, the higher an Authority Node’s deferment to
-> the protocol, the higher its efficiency.
->
-> **Standing Party**
->
-> A party that has standing in the protocol to support a given outcome
-> in any process. These processes include but are not limited to
-> selection of guides, authority set members, and/or grant proposals.
->
-> **Guides**
->
-> Guides are a group of entities charged with facilitating orderly
-> operation of the protocol. Guides are selected by the Standing
-> Parties, and work with the community to promote and maintain the
-> protocol. A guide can be an individual, or an organization that is
-> represented by an individual. Guides have very limited
-> responsibilities in the protocol.
->
-> **Protocol Support Budget**
->
-> The protocol support budget is a set of tokens generated at 72933.12
-> tokens per month. A month is defined as 4383 blocks, and a year is
-> defined as 52596 blocks.
->
-> **Proof of Stake (PoS)**
->
-> Proof of Stake refers to using opportunity costs to secure a
-> blockchain. Parties with tokens locked up are thought to be committed
-> to the blockchain due to their exposure to the value of the
-> blockchain, and thus can be trusted to make decisions within the
-> blockchain. How stake is defined varies over blockchains.
->
-> **Proof of Work (PoW)**
->
-> The grandfather of blockchains, proof of work is usually done by
-> hashing, where a nonce allows the miner to change the value of the
-> hash by changing the nonce. Work is measured by non-random leading
-> digits, usually zeros. More zeros, more work was done to find an
-> appropriate hash.
->
-> **Delegated Proof of Stake (DPoS)**
->
-> Pretty much the same as PoS, but those with stake can delegate their
-> voting power to other entities. This allows something of a more
-> representative form of governance.
+**Protocol**
 
-1.  Introduction
-    ============
+Unless explicitly modified to refer to other protocols, the term
+protocol in this document refers to the Factom protocol, which is
+implemented in software, and run upon servers run by many independent
+users and parties. The protocol’s definition is substantially defined
+by the software run by the [<span class="underline">authority
+set</span>](#kix.lres0524adra). The protocol creates an immutable
+record of data, and distributes it over the participating nodes on the
+network.
+
+**Governance**
+
+Governance is the process by which a distributed group of entities
+design, implement, deploy, execute and promote the protocol, and the
+ecosystem around the protocol. Much of governance centers on the
+protocol code that in turn generates and provides incentives in the
+form of tokens, and distributes those tokens by the rules embodied in
+the code. The Guides aid in managing this process.
+
+**Community**
+
+Community in this document refers to the community of users,
+developers, investors, traders, and organizations that have an
+interest in building, running, promoting, and using the Factom
+protocol, and other protocols building upon or dependent upon the
+Factom protocol. Community is central to Factom as everyone with an
+interest in Factom has an opportunity to play a role in maintaining,
+developing, and promoting the Factom protocol.
+
+**Factom Community Testnet Network**
+
+The entirety of the Testnet Network including all operating nodes and
+the community of users who support the Testnet Network.
+
+**Testnet Authority Pool**
+
+The group of Qualified Authority Nodes, including nodes currently
+operating as part of the Authority Set of the Community Testnet.
+
+**Federated Server**
+
+A node that is authorized to create directory blocks and write to the
+blockchain. The Federated servers use a consensus algorithm to agree
+on what to include in the blocks.
+
+**Audit Server**
+
+The Audit Servers operate in the same manner as the Federated Servers;
+in practice, they do the same work, but are not authorized to write to
+the blockchain. If a federated server is removed from the federated
+server Set, an Audit server is promoted to take its place, and the
+Federated Server becomes an audit server.
+
+**Authority Set**
+
+The complete set of Federated Servers and Audit Servers. These are the
+servers that run and serve as the backbone of the protocol.
+
+The Factom Mainnet will include 65 servers in the Authority Set after
+Milestone 3 (33 Federated servers and 32 Audit servers).
+
+All Audit and Federated Servers share equally in the tokens issued by
+the protocol.
+
+**Authority Node Operator (ANO)**
+
+An entity or an individual selected via governance processes to
+operate and maintain Federated Server(s) and/or Audit Server(s).
+
+**Digital identity**
+
+Digital identity and digital identities in this document refer to a
+set of chains in the protocol used to define a digital identity. In
+some places, we simply refer to an identity, or a protocol identity.
+In this document, all of these terms refer to Digital Identity.
+Digital identities are central to governance, roles, voting, standing,
+and auditing in the protocol.
+
+**Grant Pool**
+
+The protocol will allow the authority set to signal a higher
+efficiency, by specifying a distribution less than the maximum
+distribution. Tokens left over due to the efficiency of the servers
+are placed into the grant pool within the protocol. The grant pool
+will be used to promote the protocol, subsidize infrastructure, and
+fund development of the protocol.
+
+**Efficiency**
+
+Efficiency in this document refers to how much we can reduce the cost
+of running the protocol. To the degree we can increase efficiency
+(reduce costs of running the protocol), we can increase the support of
+the grant pool. As such, the higher an Authority Node’s deferment to
+the protocol, the higher its efficiency.
+
+**Standing Party**
+
+A party that has standing in the protocol to support a given outcome
+in any process. These processes include but are not limited to
+selection of guides, authority set members, and/or grant proposals.
+
+**Guides**
+
+Guides are a group of entities charged with facilitating orderly
+operation of the protocol. Guides are selected by the Standing
+Parties, and work with the community to promote and maintain the
+protocol. A guide can be an individual, or an organization that is
+represented by an individual. Guides have very limited
+responsibilities in the protocol.
+
+**Protocol Support Budget**
+
+The protocol support budget is a set of tokens generated at 72933.12
+tokens per month. A month is defined as 4383 blocks, and a year is
+defined as 52596 blocks.
+
+**Proof of Stake (PoS)**
+
+Proof of Stake refers to using opportunity costs to secure a
+blockchain. Parties with tokens locked up are thought to be committed
+to the blockchain due to their exposure to the value of the
+blockchain, and thus can be trusted to make decisions within the
+blockchain. How stake is defined varies over blockchains.
+
+**Proof of Work (PoW)**
+
+The grandfather of blockchains, proof of work is usually done by
+hashing, where a nonce allows the miner to change the value of the
+hash by changing the nonce. Work is measured by non-random leading
+digits, usually zeros. More zeros, more work was done to find an
+appropriate hash.
+
+**Delegated Proof of Stake (DPoS)**
+
+Pretty much the same as PoS, but those with stake can delegate their
+voting power to other entities. This allows something of a more
+representative form of governance.
+
+1. Introduction
+   ============
 
     1.  The following documents the governance model for the Authority
-        > Set and the protocol.
+        Set and the protocol.
 
     2.  The network will be initially governed by a set of Guides
-        > entrusted with promoting the best interests of the protocol
-        > and the community depending on the continued orderly operation
-        > of the protocol.
+        entrusted with promoting the best interests of the protocol
+        and the community depending on the continued orderly operation
+        of the protocol.
 
     3.  The long term plan is to automate many of the objective
-        > components, the weighting driving decision making, and other
-        > aspects of protocol governance. As an interim step, the Guides
-        > will provide governance, allowing a period of experimentation
-        > where policies can be swiftly adjusted to meet the needs
-        > presented by running the protocol in a real world setting. As
-        > governance is fundamentally a human process, it is likely that
-        > not all aspects can be fully automated.
+        components, the weighting driving decision making, and other
+        aspects of protocol governance. As an interim step, the Guides
+        will provide governance, allowing a period of experimentation
+        where policies can be swiftly adjusted to meet the needs
+        presented by running the protocol in a real world setting. As
+        governance is fundamentally a human process, it is likely that
+        not all aspects can be fully automated.
 
     4.  The Authority Set, Guides, Developers, and Community will work
-        > to develop and refine workable processes. Once agreed upon,
-        > these processes will be implemented into the protocol.
+        to develop and refine workable processes. Once agreed upon,
+        these processes will be implemented into the protocol.
 
-2.  Guides
-    ======
+2. Guides
+   ======
 
 > Guides are a group of entities selected by the other Standing Parties
 > who are charged with maintaining orderly operation of the protocol.
