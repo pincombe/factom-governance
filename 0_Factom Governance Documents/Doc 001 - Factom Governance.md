@@ -891,16 +891,14 @@ follows:
 The purpose is to make individual support more powerful than the same
 Standing Parties would be if they delegated their support.
 
-7.  Amendments and additional community documents
-    =============================================
+# 7. Amendments and additional community documents
 
-    7.1.  This Factom Governance Doc 001 is a living document that will
+**7.1** This Factom Governance Doc 001 is a living document that will
         need to be amended on a regular basis. Amending it shall only
         be executed in accordance with the process described in [<span
         class="underline">Doc 002 - Administration of Governance- and
-        community
-        documents</span>](https://factomize.com/forums/documents/doc-002-administration-of-governance-and-community-documents.47/).
+        community documents</span>](https://factomize.com/forums/documents/doc-002-administration-of-governance-and-community-documents.47/).
 
-    7.2.  Additional Factom governance and community documents shall be
+**7.2** Additional Factom governance and community documents shall be
         created and administered in accordance with the procedures set
         forth in Doc 002.
